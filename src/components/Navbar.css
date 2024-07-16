@@ -2,5 +2,26 @@
     font-family: "InterRegular";
     font-size: 20px;
     text-decoration: none;
+    color: #9B9B9B
+}
+
+#navbar a.active {
     color: black
+}
+
+#navbar a:hover {
+    color: black
+}
+
+.title {
+    font-family: "InterBold";
+    font-size: 75px;
+	background: linear-gradient(to right, #3674A0 0%, #33AF91 100%);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+    font-family: "InterRegular";
+    font-size: 45px;
 }
