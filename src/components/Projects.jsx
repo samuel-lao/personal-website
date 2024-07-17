@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
 
+import { animated, useSpring, useTransition } from '@react-spring/web';
+
 import infer from '../assets/projects/infer.png';
 import lexify from '../assets/projects/lexify.png';
 import nutrivision from '../assets/projects/nutrivision.png';
@@ -10,8 +12,13 @@ import bingo from '../assets/projects/bingo.png';
 import serviceoutreach from '../assets/projects/serviceoutreach.jpg';
 
 export default function Projects() {
-    return (
-        <div style={{ display: "flex", justifyContent: "center", alignItems: "center", paddingTop: "5vh", flexDirection: "column" }}>
+    // const springs = useSpring({
+    //     from: { y: 100, opacity: 0 },
+    //     to: { y: 0, opacity: 1 },
+    // })
+
+    return(
+        <animated.div style={{ display: "flex", justifyContent: "center", alignItems: "center", paddingTop: "5vh", flexDirection: "column", }}>
             <div className="category">
                 <text className="category-title">Long Term Projects</text>
                 {/* <text className="category-subtitle">Apps I've made with my team, Sanakama</text> */}
@@ -110,6 +117,6 @@ export default function Projects() {
                     </div>
                 </div>
             </div>
-        </div>
+        </animated.div>
     )
 }
