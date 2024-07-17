@@ -12,6 +12,7 @@
     gap: 15px;
     display: flex;
     flex-direction: column;
+    padding-bottom: 50px;
 }
 
 .category-title {
@@ -31,16 +32,17 @@
 }
 
 .category-container {
-    border: solid 3px #E4E4E4;
+    /* border: solid 3px #E4E4E4; */
     border-radius: 15px;
     padding: 30px;
-    /* display: flex;
-    justify-content: space-evenly;
-    align-items:flex-start */
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    justify-content: center;
     gap: 30px;
-    row-gap: 50px;
+    align-items:flex-start
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    row-gap: 50px; */
 }
 
 .project-container {
@@ -49,6 +51,7 @@
     align-items: center;
     /* width: 40%; */
     gap: 10px;
+    width: 33%;
 }
 
 .project-image {
