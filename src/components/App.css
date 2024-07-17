@@ -8,19 +8,37 @@
     
 }
 
+.category {
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
 .category-title {
+    font-family: "InterBold";
+    font-size: 30px;
+	background: linear-gradient(to right, #3674A0 0%, #33AF91 100%);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+    text-align: center;
     
 }
 
+.category-subtitle {
+    font-family: "InterRegular";
+    font-size: 20px;
+    text-align: center;
+}
+
 .category-container {
-    border: solid 5px #E4E4E4;
+    border: solid 3px #E4E4E4;
     border-radius: 15px;
     padding: 30px;
     /* display: flex;
     justify-content: space-evenly;
     align-items:flex-start */
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     row-gap: 50px;
 }
@@ -28,7 +46,6 @@
 .project-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     /* width: 40%; */
     gap: 10px;

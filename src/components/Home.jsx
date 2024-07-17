@@ -14,8 +14,7 @@ export default function Home() {
             <div style={{ width: "90vw", display: "flex", justifyContent: "center", gap: 50}}>
                 <div style={{ justifyContent: "center", gap: 15, display: 'flex', flexDirection: "column", maxWidth: "50vw" }}>
                     <div className='title'>Samuel Lao</div>
-                    <div className='subtitle'>I'm so cool. Would you like to meet me?
-                        This is epic. I really need to fill space!</div>
+                    <div className='subtitle'>Incoming freshman at the <span style={{color: "#990000"}}>University of Pennsylvania</span>. Enjoying life.</div>
                     <div id="social" style={{ display: "flex", gap: 45, paddingTop: 10 }}>
                         <Link to="mailto:samuel.lao100@gmail.com">
                             <img src={envelope} height={40} width={40} className="social-icon" alt="email" />
