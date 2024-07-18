@@ -9,8 +9,8 @@
                 "link": true,
                 "content": [
                     {
-                        "data": "Try it out!",
-                        "link": "google.com"
+                        "title": "Try it out!",
+                        "link": "https://www.google.com/"
                     }
                 ]
             },
@@ -50,8 +50,8 @@
             "link": true,
             "content": [
                 {
-                    "data": "Try it out!",
-                    "link": "google.com"
+                    "title": "Try it out!",
+                    "link": "https://www.google.com/"
                 }
             ]
         },
@@ -95,8 +95,8 @@
             "link": true,
             "content": [
                 {
-                    "data": "Try it out!",
-                    "link": "google.com"
+                    "title": "Try it out!",
+                    "link": "https://www.google.com/"
                 }
             ]
         },

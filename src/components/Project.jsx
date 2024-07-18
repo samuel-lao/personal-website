@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 import { animated } from '@react-spring/web';
 
@@ -29,24 +29,53 @@ export default function Project() {
 
     if (title)
         return (
-            <animated.div style={{ display: "flex", alignItems: "center", paddingTop: "5vh", flexDirection: "column", gap: 10}}>
-                <div style={{ width: "50rem", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column" }}>
-                    <text className='i-project-title'>{title}</text>
-                    <text className='blurb'>{blurb}</text>
-                </div>
-                <div style={{gap: 5, display: "flex", flexDirection: "column"}}>
-                    {info.map((element) => {
-                        if (element?.link) {
-                            // return link
-                            return
-                        }
-                        return (
-                            <div style={{display: "flex", gap: 5, alignItems: "center"}}>
-                                <div className="info-title">{element.title}</div>
-                                <div className="info-content">{element.content}</div>
-                            </div>
-                        )
-                    })}
+            <animated.div style={{ display: "flex", alignItems: "center", paddingTop: "5vh", flexDirection: "column" }}>
+                <div style={{ width: "50rem", alignItems: "center", display: "flex", flexDirection: "column", gap: 10 }}>
+                    <div style={{ display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column" }}>
+                        <text className='i-project-title'>{title}</text>
+                        <text className='blurb'>{blurb}</text>
+                    </div>
+                    <div style={{ gap: 7, display: "flex", flexDirection: "column", width: "95%" }}>
+                        {info.map((element) => {
+                            if (element?.link) {
+                                return (
+                                    <div style={{ display: "flex", gap: 10, alignItems: "center", flexDirection: "row" }}>
+                                        <div className="info-title">{element.title}</div>
+                                        {element.content.map((item) => {
+                                            return (
+                                                <Link to={item.link} style={{ textDecoration: "none" }}>
+                                                    <text className="info-content-link">{item.title}{element.content.length > 1 && element.content.slice(-1)[0] != item ? "," : ""}</text>
+                                                </Link>
+                                            )
+                                        })}
+                                    </div>
+                                )
+                            } else
+                                return (
+                                    <div style={{ display: "flex", gap: 10, alignItems: "center", flexDirection: "row" }}>
+                                        <div className="info-title">{element.title}</div>
+                                        <div className="info-content">{element.content}</div>
+                                    </div>
+                                )
+                        })}
+                    </div>
+
+                    <text className="awards-header">Awards</text>
+                    <div style={{ gap: 7, display: "flex", flexDirection: "column", width: "95%" }}>
+                        {awards.map((element) => {
+
+                            return (
+                                <div style={{ display: "flex", gap: 10, alignItems: "center", flexDirection: "row" }}>
+                                    <div className="info-title">{element.title}</div>
+                                    <div className="info-content">{element.description}</div>
+                                </div>
+                            )
+                        })}
+                    </div>
+                    <iframe width="100%" height="" src="https://www.youtube.com/embed/1W7hd6iPHfk?si=oECL-NEzEEeM89bU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    {/* <div class="video-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/1W7hd6iPHfk?si=oECL-NEzEEeM89bU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div> */}
                 </div>
             </animated.div>
         )

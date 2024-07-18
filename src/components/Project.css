@@ -15,7 +15,7 @@
 .info-title {
     background-color: rgb(213, 223, 231);
     color: #3AACFF;
-    font-family: "InterMedium";
+    font-family: "InterBold";
     padding: 5px;
     font-size: 12px;
     border-radius: 3px;
@@ -25,3 +25,25 @@
     font-family: "InterRegular";
     font-size: 15px
 }
+
+.info-content-link {
+    font-family: "InterRegular";
+    font-size: 15px;
+    color: #2b9278;
+}
+
+.info-content-link:hover {
+    text-decoration: underline;
+}
+
+.awards-header {
+    font-size: 25px;
+    font-family: "InterBold";
+    padding-bottom: 5px;
+    padding-top: 10px;
+}
+
+iframe { 
+    width: 100%;
+    aspect-ratio: 16 / 9;
+  }
