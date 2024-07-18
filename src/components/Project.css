@@ -1,7 +1,18 @@
 .i-project-title {
     font-size: 30px;
     font-family: "InterBold";
-    padding-bottom: 15px;
+    padding-bottom: 10px;
+}
+
+.i-project-subtitle {
+    font-family: "InterRegular";
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 25px;
+    /* background-color: rgb(213, 223, 231); */
+    /* color: #3AACFF; */
+    /* padding: 5px; */
+    /* border-radius: 3px; */
 }
 
 .blurb {
@@ -13,8 +24,8 @@
 }
 
 .info-title {
-    background-color: rgb(213, 223, 231);
-    color: #3AACFF;
+    background-color: rgb(217, 231, 213);
+    color: #26a944;
     font-family: "InterBold";
     padding: 5px;
     font-size: 12px;
@@ -23,12 +34,12 @@
 
 .info-content {
     font-family: "InterRegular";
-    font-size: 15px
+    font-size: 16px
 }
 
 .info-content-link {
     font-family: "InterRegular";
-    font-size: 15px;
+    font-size: 16px;
     color: #2b9278;
 }
 

@@ -2,6 +2,7 @@
     "infer": {
         "designation": "sanakama",
         "title": "Infer!",
+        "subtitle": "Training inference skills with ease.",
         "blurb": "Infer! is an app unlike any other. Infer! is an app unlike any otherInfer! is an app unlike any otherInfer! is an app unlike any otherInfer! is an app unlike any otherInfer! is an app unlike any otherInfer! is an app unlike any otherInfer! is an app unlike any other",
         "info": [
             {
@@ -45,7 +46,8 @@
 "lexify": {
     "designation": "sanakama",
     "title": "Lexify",
-    "blurb": "Lexify is an app unlike any other!!!",
+    "subtitle": "Cultural immersion turned interactive study guide.",
+    "blurb": "Lexify is an app unlike any other!!! Lexify is an app unlike any other!!! Lexify is an app unlike any other!!! Lexify is an app unlike any other!!! Lexify is an app unlike any other!!! Lexify is an app unlike any other!!!",
     "info": [
         {
             "title": "DEMO",
@@ -85,12 +87,15 @@
             "title": "WINNER",
             "description": "Winner of AI for Change Hackathon"
         }
-    ]
+    ],
+    "videos": ["https://www.youtube.com/embed/jX8G3xIiAdQ?si=rIQ7RMgceix0iVrq"],
+    "photos": ["/i-project/i-lexify.png"]
 },
 "nutrivision": {
     "designation": "sanakama",
     "title": "Nutrivision",
-    "blurb": "Nutrivision is an app unlike any other.",
+    "subtitle": "Breaking the dieting barrier with innovation.",
+    "blurb": "Nutrivision is an app unlike any other. Nutrivision is an app unlike any other. Nutrivision is an app unlike any other. Nutrivision is an app unlike any other. Nutrivision is an app unlike any other.",
     "info": [
         {
             "title": "DEMO",
@@ -134,6 +139,8 @@
             "title": "BEST THEME",
             "description": "Winner of Best Theme Award of San Mateo Hacks 2024"
         }
-    ]
+    ],
+    "videos": ["https://www.youtube.com/embed/fRNjSiU6zfQ?si=L-GzrtcpMK5ib2Zx"],
+    "photos": ["/i-project/i-nutrivision.png"]
 }
 }

@@ -13,6 +13,7 @@ export default function Project() {
     const [id, setId] = useState(useParams().id);
 
     const [title, setTitle] = useState(null)
+    const [subtitle, setSubtitle] = useState(null)
     const [blurb, setBlurb] = useState(null)
     const [designation, setDesignation] = useState(null)
     const [info, setInfo] = useState(null)
@@ -24,6 +25,7 @@ export default function Project() {
         if (projects[id]) {
             setDesignation(projects[id].designation)
             setTitle(projects[id].title)
+            setSubtitle(projects[id].subtitle)
             setBlurb(projects[id].blurb)
             setInfo(projects[id].info)
             setAwards(projects[id].awards)
@@ -36,9 +38,10 @@ export default function Project() {
     if (title)
         return (
             <animated.div style={{ display: "flex", alignItems: "center", paddingTop: "5vh", flexDirection: "column", paddingBottom: "5vh" }}>
-                <div style={{ width: "40rem", alignItems: "center", display: "flex", flexDirection: "column", gap: 10 }}>
+                <div style={{ width: "45rem", alignItems: "center", display: "flex", flexDirection: "column", gap: 10 }}>
                     <div style={{ display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column" }}>
                         <text className='i-project-title'>{title}</text>
+                        <text className='i-project-subtitle'>- {subtitle} -</text>
                         <text className='blurb'>{blurb}</text>
                     </div>
                     <div style={{ gap: 7, display: "flex", flexDirection: "column", width: "95%" }}>
@@ -100,8 +103,8 @@ export default function Project() {
 
     // If project doesn't exist
     return (
-        <div>
-            This project doesn't exist!
+        <div style={{display: "flex", alignItems: "center", justifyContent: "center", height: "80vh"}}>
+            <text style={{fontFamily: "InterRegular", fontSize: "24px", color: "darkgrayya"}}>This project doesn't exist! (Or I haven't made the page for it yet...)</text>
         </div>
     )
 }
