@@ -38,7 +38,9 @@
                 "title": "THIRD PLACE",
                 "description": "3rd place winner of the Congressional App Challenge"
             }
-        ]
+        ],
+        "videos": ["https://www.youtube.com/embed/1W7hd6iPHfk?si=oECL-NEzEEeM89bU"],
+        "photos": ["/i-project/i-infer.png"]
     },
 "lexify": {
     "designation": "sanakama",

@@ -3,6 +3,8 @@ import { Link, useParams } from 'react-router-dom';
 
 import { animated } from '@react-spring/web';
 
+// import individualinfer from "../../public/individual-project/individualinfer.png"
+
 import projects from "../projects.json"
 
 import "./Project.css"
@@ -15,6 +17,8 @@ export default function Project() {
     const [designation, setDesignation] = useState(null)
     const [info, setInfo] = useState(null)
     const [awards, setAwards] = useState(null)
+    const [videos, setVideos] = useState(null)
+    const [photos, setPhotos] = useState(null)
 
     useEffect(() => {
         if (projects[id]) {
@@ -23,14 +27,16 @@ export default function Project() {
             setBlurb(projects[id].blurb)
             setInfo(projects[id].info)
             setAwards(projects[id].awards)
+            setVideos(projects[id].videos)
+            setPhotos(projects[id].photos)
         }
     }, [])
 
 
     if (title)
         return (
-            <animated.div style={{ display: "flex", alignItems: "center", paddingTop: "5vh", flexDirection: "column" }}>
-                <div style={{ width: "50rem", alignItems: "center", display: "flex", flexDirection: "column", gap: 10 }}>
+            <animated.div style={{ display: "flex", alignItems: "center", paddingTop: "5vh", flexDirection: "column", paddingBottom: "5vh" }}>
+                <div style={{ width: "40rem", alignItems: "center", display: "flex", flexDirection: "column", gap: 10 }}>
                     <div style={{ display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column" }}>
                         <text className='i-project-title'>{title}</text>
                         <text className='blurb'>{blurb}</text>
@@ -72,10 +78,21 @@ export default function Project() {
                             )
                         })}
                     </div>
-                    <iframe width="100%" height="" src="https://www.youtube.com/embed/1W7hd6iPHfk?si=oECL-NEzEEeM89bU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    {/* <div class="video-container">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/1W7hd6iPHfk?si=oECL-NEzEEeM89bU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div> */}
+
+                    {photos && photos.map((photo) => {
+                        return (
+                            <img src={photo} width="100%" height="auto" style={{aspectRatio: "16 / 9", objectFit: "cover", objectPosition: "center", borderRadius: "10px", marginTop: 10 }}/>
+                        )
+                    })}
+
+                    {videos && videos.map((video) => {
+                        return (
+                            <iframe style={{marginTop: 10}}width="100%" src={video} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        )
+                    })}
+
+
+
                 </div>
             </animated.div>
         )
