@@ -1,0 +1,89 @@
+{
+    "infer": {
+        "designation": "sanakama",
+        "title": "Infer!",
+        "blurb": "Infer! is an app unlike any other.",
+        "info": {
+            "DEMO": [{
+                "title": "Try it out!",
+                "link": "google.com"
+            }],
+            "FRONTEND": "React Native",
+            "BACKEND": "Firebase, GPT-3.5, IMSDB, Python",
+            "SOCIALS": [
+                {
+                    "title": "YouTube",
+                    "link": "youtube.com"
+                }
+            ]
+        },
+        "awards": [
+            {
+                "title": "THIRD PLACE",
+                "description": "3rd place winner of the Congressional App Challenge"
+            }
+        ]
+    },
+    "lexify": {
+        "designation": "sanakama",
+        "title": "Lexify",
+        "blurb": "Lexify is an app unlike any other!!!",
+        "info": {
+            "DEMO": [{
+                "title": "Try it out!",
+                "link": "google.com"
+            }],
+            "FRONTEND": "React Native",
+            "BACKEND": "Firebase, Gemini Pro 1.5",
+            "SOCIALS": [
+                {
+                    "title": "Devpost",
+                    "link": "devpost.com"
+                },
+                {
+                    "title": "YouTube",
+                    "link": "youtube.com"
+                }
+            ]
+        },
+        "awards": [
+            {
+                "title": "WINNER",
+                "description": "Winner of AI for Change Hackathon"
+            }
+        ]
+    },
+    "nutrivision": {
+        "designation": "sanakama",
+        "title": "Nutrivision",
+        "blurb": "Nutrivision is an app unlike any other.",
+        "info": {
+            "DEMO": [{
+                "title": "Try it out!",
+                "link": "google.com"
+            }],
+            "FRONTEND": "React Native",
+            "BACKEND": "Firebase, GPT-3.5, IMSDB, Python",
+            "SOCIALS": [
+                {
+                    "title": "Devpost",
+                    "link": "devpost.com"
+                },
+                {
+                    "title": "YouTube",
+                    "link": "youtube.com"
+                }
+            ]
+        },
+        "awards": [
+            {
+            "title": "FIRST PLACE",
+            "description": "Winner of San Mateo Hacks 2024"
+            },
+            {
+                "title": "BEST THEME",
+                "description": "Winner of Best Theme Award of San Mateo Hacks 2024"
+            }
+        ]
+    }
+}

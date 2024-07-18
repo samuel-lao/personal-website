@@ -23,7 +23,8 @@ export default function Projects() {
             <div className="category">
                 <text className="category-title">Long Term Projects</text>
                 {/* <text className="category-subtitle">Apps I've made with my team, Sanakama</text> */}
-                <div style={{ width: "clamp(10vw, 60vw, 65rem)" }}>
+                {/* <div style={{ width: "clamp(10vw, 60vw, 65rem)" }}> */}
+                <div style={{width: "60rem"}}>
                     <div className="category-container">
                         <div className="project-container">
                             <Link to="infer">
@@ -69,7 +70,7 @@ export default function Projects() {
             <div className="category">
                 <text className="category-title">Research Projects</text>
                 {/* <text className="category-subtitle">Apps I've made with my team, Sanakama</text> */}
-                <div style={{ width: "clamp(10vw, 60vw, 65rem)" }}>
+                <div style={{width: "60rem"}}>
                     <div className="category-container">
                         <div className="project-container">
                             <Link to="memory">
@@ -102,7 +103,7 @@ export default function Projects() {
             <div className="category">
                 <text className="category-title">Past Projects</text>
                 {/* <text className="category-subtitle">Apps I've made with my team, Sanakama</text> */}
-                <div style={{ width: "clamp(10vw, 60vw, 65rem)" }}>
+                <div style={{width: "60rem"}}>
                     <div className="category-container">
                         <div className="project-container">
                             <Link to="serviceoutreach">
