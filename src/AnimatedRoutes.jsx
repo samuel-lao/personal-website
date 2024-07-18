@@ -1,10 +1,12 @@
 import { BrowserRouter, Route, Router, Routes, useLocation } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import { useTransition, animated, easings } from "@react-spring/web";
+
 
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
-import { useTransition, animated, easings } from "@react-spring/web";
+import Project from "./components/Project";
 
 function App() {
   const location = useLocation();
@@ -21,6 +23,7 @@ function App() {
         <Routes location={item}>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/projects/:id" element={<Project />} />
         </Routes>
     </animated.div>
   ));
