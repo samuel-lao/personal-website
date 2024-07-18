@@ -2,21 +2,37 @@
     "infer": {
         "designation": "sanakama",
         "title": "Infer!",
-        "blurb": "Infer! is an app unlike any other.",
-        "info": {
-            "DEMO": [{
-                "title": "Try it out!",
-                "link": "google.com"
-            }],
-            "FRONTEND": "React Native",
-            "BACKEND": "Firebase, GPT-3.5, IMSDB, Python",
-            "SOCIALS": [
-                {
-                    "title": "YouTube",
-                    "link": "youtube.com"
-                }
-            ]
-        },
+        "blurb": "Infer! is an app unlike any other. Infer! is an app unlike any otherInfer! is an app unlike any otherInfer! is an app unlike any otherInfer! is an app unlike any otherInfer! is an app unlike any otherInfer! is an app unlike any otherInfer! is an app unlike any other",
+        "info": [
+            {
+                "title": "DEMO",
+                "link": true,
+                "content": [
+                    {
+                        "data": "Try it out!",
+                        "link": "google.com"
+                    }
+                ]
+            },
+            {
+                "title": "FRONTEND",
+                "content": "React Native"
+            },
+            {
+                "title": "BACKEND",
+                "content": "Firebase, GPT-3.5, IMSDB, Python"
+            },
+            {
+                "title": "SOCIALS",
+                "link": true,
+                "content": [
+                    {
+                        "title": "YouTube",
+                        "link": "youtube.com"
+                    }
+                ]
+            }
+        ],
         "awards": [
             {
                 "title": "THIRD PLACE",
@@ -24,18 +40,33 @@
             }
         ]
     },
-    "lexify": {
-        "designation": "sanakama",
-        "title": "Lexify",
-        "blurb": "Lexify is an app unlike any other!!!",
-        "info": {
-            "DEMO": [{
-                "title": "Try it out!",
-                "link": "google.com"
-            }],
-            "FRONTEND": "React Native",
-            "BACKEND": "Firebase, Gemini Pro 1.5",
-            "SOCIALS": [
+"lexify": {
+    "designation": "sanakama",
+    "title": "Lexify",
+    "blurb": "Lexify is an app unlike any other!!!",
+    "info": [
+        {
+            "title": "DEMO",
+            "link": true,
+            "content": [
+                {
+                    "data": "Try it out!",
+                    "link": "google.com"
+                }
+            ]
+        },
+        {
+            "title": "FRONTEND",
+            "content": "React Native"
+        },
+        {
+            "title": "BACKEND",
+            "content": "Firebase, Gemini Pro 1.5"
+        },
+        {
+            "title": "SOCIALS",
+            "link": true,
+            "content": [
                 {
                     "title": "Devpost",
                     "link": "devpost.com"
@@ -45,26 +76,42 @@
                     "link": "youtube.com"
                 }
             ]
+        }
+    ],
+    "awards": [
+        {
+            "title": "WINNER",
+            "description": "Winner of AI for Change Hackathon"
+        }
+    ]
+},
+"nutrivision": {
+    "designation": "sanakama",
+    "title": "Nutrivision",
+    "blurb": "Nutrivision is an app unlike any other.",
+    "info": [
+        {
+            "title": "DEMO",
+            "link": true,
+            "content": [
+                {
+                    "data": "Try it out!",
+                    "link": "google.com"
+                }
+            ]
         },
-        "awards": [
-            {
-                "title": "WINNER",
-                "description": "Winner of AI for Change Hackathon"
-            }
-        ]
-    },
-    "nutrivision": {
-        "designation": "sanakama",
-        "title": "Nutrivision",
-        "blurb": "Nutrivision is an app unlike any other.",
-        "info": {
-            "DEMO": [{
-                "title": "Try it out!",
-                "link": "google.com"
-            }],
-            "FRONTEND": "React Native",
-            "BACKEND": "Firebase, GPT-3.5, IMSDB, Python",
-            "SOCIALS": [
+        {
+            "title": "FRONTEND",
+            "content": "React Native"
+        },
+        {
+            "title": "BACKEND",
+            "content": "Firebase, GPT-3.5, IMSDB, Python"
+        },
+        {
+            "title": "SOCIALS",
+            "link": true,
+            "content": [
                 {
                     "title": "Devpost",
                     "link": "devpost.com"
@@ -74,16 +121,17 @@
                     "link": "youtube.com"
                 }
             ]
-        },
-        "awards": [
-            {
+        }
+    ],
+    "awards": [
+        {
             "title": "FIRST PLACE",
             "description": "Winner of San Mateo Hacks 2024"
-            },
-            {
-                "title": "BEST THEME",
-                "description": "Winner of Best Theme Award of San Mateo Hacks 2024"
-            }
-        ]
-    }
+        },
+        {
+            "title": "BEST THEME",
+            "description": "Winner of Best Theme Award of San Mateo Hacks 2024"
+        }
+    ]
+}
 }

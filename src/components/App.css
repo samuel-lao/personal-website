@@ -89,9 +89,11 @@
 }
 
 .project-tag {
-    background-color: rgba(179,207,228,0.5);
+    background-color: rgb(213, 223, 231);
     color: #3AACFF;
     font-family: "InterBold";
     padding: 5px;
     font-size: 12px;
+    border-radius: 3px;
+
 }

@@ -1,0 +1,27 @@
+.i-project-title {
+    font-size: 30px;
+    font-family: "InterBold";
+    padding-bottom: 15px;
+}
+
+.blurb {
+    font-size: 18px;
+    font-family: "InterRegular";
+    padding-bottom: 10px;
+    text-indent: 1em;
+    line-height: 1.6;
+}
+
+.info-title {
+    background-color: rgb(213, 223, 231);
+    color: #3AACFF;
+    font-family: "InterMedium";
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 3px;
+}
+
+.info-content {
+    font-family: "InterRegular";
+    font-size: 15px
+}

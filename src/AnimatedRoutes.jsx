@@ -11,11 +11,11 @@ import Project from "./components/Project";
 function App() {
   const location = useLocation();
   const transitions = useTransition(location, {
-    from: { opacity: 0, y: 50 },
+    from: { opacity: 0, y: 25 },
     enter: { opacity: 1, y: 0},
-    leave: { opacity: 0, y: 50 },
+    leave: { opacity: 0, y: 25 },
     exitBeforeEnter: true,
-    config: { duration: 400, easing: easings.easeInOutCubic }
+    config: { duration: 350, easing: easings.easeInOutCubic }
   });
 
   return transitions((styles, item) => (
