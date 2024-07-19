@@ -5,6 +5,8 @@ import { animated } from '@react-spring/web';
 import githubwhite from "../assets/githubwhite.svg"
 import githuboutline from "../assets/github-circle-outline.svg"
 import sanakama from "../assets/sanakama.png"
+import asdrp from "../assets/asdrp.png"
+import cs50 from "../assets/cs50.png"
 
 import projects from "../projects.json"
 
@@ -44,90 +46,115 @@ export default function Project() {
 
     if (title)
         return (
-            <animated.div style={{ display: "flex", alignItems: "center", paddingTop: "5vh", flexDirection: "column", paddingBottom: "5vh" }}>
-                <div style={{ width: "45rem", alignItems: "center", display: "flex", flexDirection: "column", gap: 10, position: "relative" }}>
-                    <div style={{ display: "flex", justifyContent: "space-between", position: "absolute", left: 0, right: 0, top: 0, }}>
-                        <Link to={github} style={{ textDecoration: "none" }}>
-                            <img src={githuboutline} style={{ width: "2.5em" }} className="github-btn"></img>
-                        </Link>
-                        <img src={sanakama} className='designation' />
-                    </div>
-                    <div style={{ display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column" }}>
-                        <text className='i-project-title'>{title}</text>
-                        <text className='i-project-subtitle'>- {subtitle} -</text>
-                        <text className='blurb'>{blurb}</text>
-                    </div>
-                    <div style={{ gap: 7, display: "flex", flexDirection: "column", width: "95%" }}>
-                        {info.map((element) => {
-                            if (element?.link) {
+            <>
+                <animated.div style={{ display: "flex", alignItems: "center", paddingTop: "5vh", flexDirection: "column", paddingBottom: "5vh" }}>
+                    <div style={{ width: "45rem", alignItems: "center", display: "flex", flexDirection: "column", gap: 10, position: "relative" }}>
+                        <div style={{ display: "flex", justifyContent: "space-between", position: "absolute", left: 0, right: 0, top: 0, }}>
+                            {
+                                designation == "sanakama" &&
+                                <>
+                                 <img src={sanakama} className='designation' />
+                                 <div className='tooltip'>Built by the Sanakama Team (Sam, Nathan, Kabir, Matthew)!</div>
+                                </>
+                            }
+                            {
+                                designation == "asdrp" &&
+                                <>
+                                 <img src={asdrp} className='designation' />
+                                 <div className='tooltip'>Researched in the Aspiring Scholars Directed Research Program.</div>
+                                </>
+                            }
+                                                        {
+                                designation == "cs50" &&
+                                <>
+                                 <img src={cs50} className='designation' />
+                                 <div className='tooltip'>Completed as a final project for Harvard's online CS50x course.</div>
+                                </>
+                            }
+                            {
+                                github &&
+                                <Link to={github} style={{ textDecoration: "none" }}>
+                                    <img src={githuboutline} style={{ width: "2.5em" }} className="github-btn"></img>
+                                </Link>
+                            }
+                        </div>
+                        <div style={{ display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column" }}>
+                            <text className='i-project-title'>{title}</text>
+                            <text className='i-project-subtitle'>- {subtitle} -</text>
+                            <text className='blurb'>{blurb}</text>
+                        </div>
+                        <div style={{ gap: 7, display: "flex", flexDirection: "column", width: "95%" }}>
+                            {info.map((element) => {
+                                if (element?.link) {
+                                    return (
+                                        <div style={{ display: "flex", gap: 10, alignItems: "center", flexDirection: "row" }}>
+                                            <div className="info-title">{element.title}</div>
+                                            {element.content.map((item) => {
+                                                return (
+                                                    <Link to={item.link} style={{ textDecoration: "none" }}>
+                                                        <text className="info-content-link">{item.title}{element.content.length > 1 && element.content.slice(-1)[0] != item ? "," : ""}</text>
+                                                    </Link>
+                                                )
+                                            })}
+                                        </div>
+                                    )
+                                } else
+                                    return (
+                                        <div style={{ display: "flex", gap: 10, alignItems: "center", flexDirection: "row" }}>
+                                            <div className="info-title">{element.title}</div>
+                                            <div className="info-content">{element.content}</div>
+                                        </div>
+                                    )
+                            })}
+                        </div>
+
+                        {(awards || conferences || activities) &&
+                            <text className="awards-header">{awards && "Awards"}{conferences && "Conferences"}{activities && "Partners & Activities"}</text>
+                        }
+                        <div style={{ gap: 7, display: "flex", flexDirection: "column", width: "95%" }}>
+                            {awards && awards.map((element) => {
                                 return (
                                     <div style={{ display: "flex", gap: 10, alignItems: "center", flexDirection: "row" }}>
                                         <div className="info-title">{element.title}</div>
-                                        {element.content.map((item) => {
-                                            return (
-                                                <Link to={item.link} style={{ textDecoration: "none" }}>
-                                                    <text className="info-content-link">{item.title}{element.content.length > 1 && element.content.slice(-1)[0] != item ? "," : ""}</text>
-                                                </Link>
-                                            )
-                                        })}
+                                        <div className="info-content">{element.description}</div>
                                     </div>
                                 )
-                            } else
+                            })}
+                            {conferences && conferences.map((element) => {
                                 return (
                                     <div style={{ display: "flex", gap: 10, alignItems: "center", flexDirection: "row" }}>
                                         <div className="info-title">{element.title}</div>
-                                        <div className="info-content">{element.content}</div>
+                                        <div className="info-content">{element.description}</div>
                                     </div>
                                 )
+                            })}
+                            {activities && activities.map((element) => {
+                                return (
+                                    <div style={{ display: "flex", gap: 10, alignItems: "center", flexDirection: "row" }}>
+                                        <div className="info-title">{element.title}</div>
+                                        <div className="info-content">{element.description}</div>
+                                    </div>
+                                )
+                            })}
+                        </div>
+
+                        {photos && photos.map((photo) => {
+                            return (
+                                <img src={photo} width="100%" height="auto" style={{ aspectRatio: "16 / 9", objectFit: "cover", objectPosition: "center", borderRadius: "10px", marginTop: 10 }} />
+                            )
                         })}
+
+                        {videos && videos.map((video) => {
+                            return (
+                                <iframe style={{ marginTop: 10 }} width="100%" src={video} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            )
+                        })}
+
+
+
                     </div>
-
-                    {(awards || conferences || activities) &&
-                        <text className="awards-header">{awards && "Awards"}{conferences && "Conferences"}{activities && "Partners & Activities"}</text>
-                    }
-                    <div style={{ gap: 7, display: "flex", flexDirection: "column", width: "95%" }}>
-                        {awards && awards.map((element) => {
-                            return (
-                                <div style={{ display: "flex", gap: 10, alignItems: "center", flexDirection: "row" }}>
-                                    <div className="info-title">{element.title}</div>
-                                    <div className="info-content">{element.description}</div>
-                                </div>
-                            )
-                        })}
-                        {conferences && conferences.map((element) => {
-                            return (
-                                <div style={{ display: "flex", gap: 10, alignItems: "center", flexDirection: "row" }}>
-                                    <div className="info-title">{element.title}</div>
-                                    <div className="info-content">{element.description}</div>
-                                </div>
-                            )
-                        })}
-                        {activities && activities.map((element) => {
-                            return (
-                                <div style={{ display: "flex", gap: 10, alignItems: "center", flexDirection: "row" }}>
-                                    <div className="info-title">{element.title}</div>
-                                    <div className="info-content">{element.description}</div>
-                                </div>
-                            )
-                        })}
-                    </div>
-
-                    {photos && photos.map((photo) => {
-                        return (
-                            <img src={photo} width="100%" height="auto" style={{ aspectRatio: "16 / 9", objectFit: "cover", objectPosition: "center", borderRadius: "10px", marginTop: 10 }} />
-                        )
-                    })}
-
-                    {videos && videos.map((video) => {
-                        return (
-                            <iframe style={{ marginTop: 10 }} width="100%" src={video} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        )
-                    })}
-
-
-
-                </div>
-            </animated.div>
+                </animated.div>
+            </>
         )
 
 

@@ -87,6 +87,24 @@ iframe {
 }
 
 .designation:hover {
+    /* background-color: rgb(231, 231, 231); */
+    transform: rotate(15deg) scale(1.2);
+}
+
+.tooltip {
+    opacity: 0;
     background-color: rgb(231, 231, 231);
-    transform: rotate(30deg);
+    color: black;
+    border-radius: 6px;
+    padding: 5px;
+    font-family: "InterRegular";
+    z-index: 1;
+    position: absolute;
+    top: -2.3rem;
+    
+    transition: opacity 0.2s linear; 
+}
+
+.designation:hover + .tooltip{
+    opacity: 1;
 }

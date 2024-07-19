@@ -5,9 +5,7 @@
 .social-icon {
     padding: 10px;
     border-radius: 15px;   
-    transition: background-color 0.2s linear;
-
-    
+    transition: background-color 0.2s linear;    
 }
 
 .category {
