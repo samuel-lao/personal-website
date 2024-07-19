@@ -2,12 +2,21 @@
     border: none;
     border-bottom: 1px black solid;
     background-color: #F6F6F6;   
-    width: 40%;
+    width: 100%;
     font-size: 20px;
     padding-bottom: 5px;
+    /* transition: border-width 0.2s linear; */
 }
 
 .teddy-input:focus {
     outline: none;
-    border-bottom: 2px black solid;
+    border-width: 2px;
+}
+
+.teddy-submit-input {
+    transition: transform 0.4s;
+}
+
+.teddy-submit-input:hover {
+    transform: scale(1.3);
 }
