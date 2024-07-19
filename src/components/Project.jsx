@@ -21,6 +21,7 @@ export default function Project() {
     const [videos, setVideos] = useState(null)
     const [photos, setPhotos] = useState(null)
     const [conferences, setConferences] = useState(null)
+    const [activities, setActivities] = useState(null)
 
     useEffect(() => {
         if (projects[id]) {
@@ -30,9 +31,10 @@ export default function Project() {
             setBlurb(projects[id].blurb)
             setInfo(projects[id].info)
             setAwards(projects[id].awards)
+            setConferences(projects[id].conferences)
+            setActivities(projects[id].activities)
             setVideos(projects[id].videos)
             setPhotos(projects[id].photos)
-            setConferences(projects[id].conferences)
         }
     }, [])
 
@@ -71,7 +73,7 @@ export default function Project() {
                         })}
                     </div>
 
-                    <text className="awards-header">{awards ? "Awards" : "Conferences"} </text>
+                    <text className="awards-header">{awards && "Awards"}{conferences && "Conferences"}{activities && "Partners & Activities"}</text>
                     <div style={{ gap: 7, display: "flex", flexDirection: "column", width: "95%" }}>
                         {awards && awards.map((element) => {
                             return (
@@ -81,8 +83,15 @@ export default function Project() {
                                 </div>
                             )
                         })}
-
                         {conferences && conferences.map((element) => {
+                            return (
+                                <div style={{ display: "flex", gap: 10, alignItems: "center", flexDirection: "row" }}>
+                                    <div className="info-title">{element.title}</div>
+                                    <div className="info-content">{element.description}</div>
+                                </div>
+                            )
+                        })}
+                        {activities && activities.map((element) => {
                             return (
                                 <div style={{ display: "flex", gap: 10, alignItems: "center", flexDirection: "row" }}>
                                     <div className="info-title">{element.title}</div>

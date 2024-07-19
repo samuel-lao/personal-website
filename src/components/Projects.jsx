@@ -33,7 +33,7 @@ export default function Projects() {
                             <text className="project-title">Infer!</text>
                             <text className="project-subtitle">App to train inference skills of autistic audience using movies</text>
                             <div className="tag-container">
-                                <text className="project-tag">ML (GEN TEXT)</text>
+                                <text className="project-tag">ML</text>
                                 <text className="project-tag">FULLSTACK</text>
                                 <text className="project-tag">REACT NATIVE</text>
                             </div>
@@ -102,7 +102,6 @@ export default function Projects() {
 
             <div className="category">
                 <text className="category-title">Past Projects</text>
-                {/* <text className="category-subtitle">Apps I've made with my team, Sanakama</text> */}
                 <div style={{width: "60rem"}}>
                     <div className="category-container">
                         <div className="project-container">

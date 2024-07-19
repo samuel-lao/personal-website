@@ -145,8 +145,8 @@
 },
 "memory": {
     "designation": "asdrp",
-    "title": "Memory",
-    "subtitle": null,
+    "title": "Memory Researcn",
+    "subtitle": "How do we improving memory engaging?",
     "blurb": "Memory is an subject unlike any other. Memory is an subject unlike any other. Memory is an subject unlike any other. Memory is an subject unlike any other. Memory is an subject unlike any other.",
     "info": [
         {
@@ -173,17 +173,17 @@
 },
 "llmcreativity": {
     "designation": "asdrp",
-    "title": "LLM Creativity",
-    "subtitle": null,
+    "title": "LLM Creativity Research",
+    "subtitle": "How creative is AI?",
     "blurb": "Creativity is an subject unlike any other. Creativity is an subject unlike any other. Creativity is an subject unlike any other. Creativity is an subject unlike any other. Creativity is an subject unlike any other.",
     "info": [
         {
             "title": "TOPICS",
-            "content": "Working Memory, N-Back Task, Game Design"
+            "content": "AI, Convergent Thinking, Divergent Thinking, RAT, AUT, TTCT"
         },
         {
             "title": "TECHNOLOGY",
-            "content": "React, React Native, Firebase, Figma"
+            "content": "R, GPT-3.5"
         }
     ],
     "conferences": [
@@ -194,6 +194,46 @@
         {
             "title": "POSTER PRESENTATION",
             "description": "Society for the Neuroscience of Creativity, 2024"
+        }
+    ],
+    "videos": null,
+    "photos": ["/i-project/i-llmcreativity-1.jpeg", "/i-project/i-llmcreativity-2.jpg", "/i-project/i-llmcreativity-3.jpeg"]
+},
+"serviceoutreach": {
+    "designation": "vchs",
+    "title": "The Service Outreach Club",
+    "subtitle": "Giving back. A lot.",
+    "blurb": "Serving is an subject unlike any other. Serving is an subject unlike any other. Serving is an subject unlike any other. Serving is an subject unlike any other. Serving is an subject unlike any other.",
+    "info": [
+        {
+            "title": "TOPICS",
+            "content": "Leadership, Social Good, Pretty Fun"
+        }
+    ],
+    "activities": [
+        {
+            "title": "CHILDREN'S BOOK PROJECT",
+            "description": "Engaged K-12 in a competitive book drive; raised over 1,000 books"
+        },
+        {
+            "title": "SECOND HARVEST",
+            "description": "Volunteered outside of school at food distribution and packing center"
+        },
+        {
+            "title": "KIDS AGAINST HUNGER",
+            "description": "Sold Valentine's Day 'Candy Grams' to raise funds for KAH"   
+        },
+        {
+            "title": "SCHOOL-WIDE PROJECT",
+            "description": "Engaged school in several organized stations (Crayon Initiative: sorting crayons, Shepherd's Gate: tie blankets, CityServe: homeless toiletry kits)"   
+        },
+        {
+            "title": "JAMBA JUICE",
+            "description": "Sold exclusive BOGO cards to Pre K-12 to fund club endeavors"   
+        },
+        {
+            "title": "LEGO REPLAY",
+            "description": "Collected LEGO donations from preschool to high school plus local churches - amassed 159 POUNDS"   
         }
     ],
     "videos": null,
