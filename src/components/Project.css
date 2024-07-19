@@ -69,5 +69,24 @@ iframe {
     justify-content: center;
     align-items: center;
     font-family: "InterMedium";
+    border-radius: 10px;
     padding: 5px;
+    transition: background-color 0.2s linear;
+
+}
+
+.github-btn:hover {
+    background-color: #1d6352;
+}
+
+.designation {
+    width: 2.5em;
+    border-radius: 10px;  
+    padding: 5px;
+    transition: transform 0.2s ease-in-out, background-color 0.2s linear;
+}
+
+.designation:hover {
+    background-color: rgb(231, 231, 231);
+    transform: rotate(30deg);
 }

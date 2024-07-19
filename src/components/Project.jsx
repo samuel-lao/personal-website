@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom';
-
 import { animated } from '@react-spring/web';
-import githubwhite from "../assets/githubwhite.svg"
 
+import githubwhite from "../assets/githubwhite.svg"
+import githuboutline from "../assets/github-circle-outline.svg"
+import sanakama from "../assets/sanakama.png"
 
 import projects from "../projects.json"
 
@@ -44,16 +45,15 @@ export default function Project() {
     if (title)
         return (
             <animated.div style={{ display: "flex", alignItems: "center", paddingTop: "5vh", flexDirection: "column", paddingBottom: "5vh" }}>
-                <div style={{ width: "45rem", alignItems: "center", display: "flex", flexDirection: "column", gap: 10 }}>
-                    <div style={{ display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column" }}>
-                        
-                        <text className='i-project-title'>{title}</text>
-                        <Link to={github} style={{textDecoration: "none"}}>
-                            <div className="github-btn">
-                                <img src={githubwhite} width={20} height={20}></img>
-                                <text>View Repo</text>
-                            </div>
+                <div style={{ width: "45rem", alignItems: "center", display: "flex", flexDirection: "column", gap: 10, position: "relative" }}>
+                    <div style={{ display: "flex", justifyContent: "space-between", position: "absolute", left: 0, right: 0, top: 0, }}>
+                        <Link to={github} style={{ textDecoration: "none" }}>
+                            <img src={githuboutline} style={{ width: "2.5em" }} className="github-btn"></img>
                         </Link>
+                        <img src={sanakama} className='designation' />
+                    </div>
+                    <div style={{ display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column" }}>
+                        <text className='i-project-title'>{title}</text>
                         <text className='i-project-subtitle'>- {subtitle} -</text>
                         <text className='blurb'>{blurb}</text>
                     </div>
@@ -82,7 +82,7 @@ export default function Project() {
                         })}
                     </div>
 
-                    {(awards || conferences || activities) && 
+                    {(awards || conferences || activities) &&
                         <text className="awards-header">{awards && "Awards"}{conferences && "Conferences"}{activities && "Partners & Activities"}</text>
                     }
                     <div style={{ gap: 7, display: "flex", flexDirection: "column", width: "95%" }}>
