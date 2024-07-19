@@ -7,6 +7,7 @@ import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Project from "./components/Project";
+import Teddy from "./components/Teddy";
 
 function App() {
   const location = useLocation();
@@ -19,11 +20,12 @@ function App() {
   });
 
   return transitions((styles, item) => (
-    <animated.div style={styles}>
+    <animated.div style={{paddingTop: 55, ...styles}}>
         <Routes location={item}>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/projects/:id" element={<Project />} />
+          <Route path="/teddy" element={<Teddy />} />
         </Routes>
     </animated.div>
   ));

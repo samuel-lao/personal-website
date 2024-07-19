@@ -2,11 +2,17 @@
     font-family: "InterRegular";
     font-size: 20px;
     text-decoration: none;
-    color: #9B9B9B
+    color: #9B9B9B;
+    transition: all 0.2s linear;
 }
 
 #navbar a.active {
-    color: black
+    color: black;
+}
+
+#navbar {
+    background-color: rgba(246, 246, 246, 0.7);
+    backdrop-filter: blur(10px);
 }
 
 #navbar a:hover {

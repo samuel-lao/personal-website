@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom';
 import { animated } from '@react-spring/web';
+import { LuExternalLink } from "react-icons/lu";
 
 import githubwhite from "../assets/githubwhite.svg"
 import githuboutline from "../assets/github-circle-outline.svg"
@@ -93,13 +94,18 @@ export default function Project() {
                                         {element.content.map((item) => {
                                             if (item.link)
                                                 return (
-                                                    <Link to={item.link} style={{ textDecoration: "none" }}>
-                                                        <text className="info-content-link">{item.title}{element.content.length > 1 && element.content.slice(-1)[0] != item ? "," : ""}</text>
+                                                    <Link to={item.link} style={{ textDecoration: "none" }} className="info-content-link">
+                                                        {/* <text className="info-content-link">{item.title}{element.content.length > 1 && element.content.slice(-1)[0] != item ? "," : ""}</text> */}
+                                                        <text>{item.title}</text>
+                                                        <LuExternalLink color='#2b9278'/>
                                                     </Link>
                                                 )
                                             else
                                                 return (
-                                                    <text className="info-content-link-disabled">{item.title}{element.content.length > 1 && element.content.slice(-1)[0] != item ? "," : ""}</text>
+                                                    <div className="info-content-link-disabled">
+                                                        <text>{item.title}{element.content.length > 1 && element.content.slice(-1)[0] != item ? "," : ""}</text>
+                                                        <LuExternalLink color='#2b9278' opacity={0.5}/>
+                                                    </div>
                                                 )
                                         })}
                                     </div>
@@ -166,7 +172,7 @@ export default function Project() {
     // If project doesn't exist
     return (
         <div style={{ display: "flex", alignItems: "center", justifyContent: "center", height: "80vh" }}>
-            <text style={{ fontFamily: "InterRegular", fontSize: "24px", color: "darkgray" }}>This project doesn't exist! (Or I haven't made the page for it yet...)</text>
+            <text style={{ fontFamily: "InterRegular", fontSize: "24px", color: "darkgray" }}>This project doesn't exist!</text>
         </div>
     )
 }
