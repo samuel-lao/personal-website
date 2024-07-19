@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom';
 
 import { animated } from '@react-spring/web';
+import githubwhite from "../assets/githubwhite.svg"
 
-// import individualinfer from "../../public/individual-project/individualinfer.png"
 
 import projects from "../projects.json"
 
@@ -16,6 +16,7 @@ export default function Project() {
     const [subtitle, setSubtitle] = useState(null)
     const [blurb, setBlurb] = useState(null)
     const [designation, setDesignation] = useState(null)
+    const [github, setGithub] = useState(null)
     const [info, setInfo] = useState(null)
     const [awards, setAwards] = useState(null)
     const [videos, setVideos] = useState(null)
@@ -26,6 +27,7 @@ export default function Project() {
     useEffect(() => {
         if (projects[id]) {
             setDesignation(projects[id].designation)
+            setGithub(projects[id].github)
             setTitle(projects[id].title)
             setSubtitle(projects[id].subtitle)
             setBlurb(projects[id].blurb)
@@ -44,7 +46,14 @@ export default function Project() {
             <animated.div style={{ display: "flex", alignItems: "center", paddingTop: "5vh", flexDirection: "column", paddingBottom: "5vh" }}>
                 <div style={{ width: "45rem", alignItems: "center", display: "flex", flexDirection: "column", gap: 10 }}>
                     <div style={{ display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column" }}>
+                        
                         <text className='i-project-title'>{title}</text>
+                        <Link to={github} style={{textDecoration: "none"}}>
+                            <div className="github-btn">
+                                <img src={githubwhite} width={20} height={20}></img>
+                                <text>View Repo</text>
+                            </div>
+                        </Link>
                         <text className='i-project-subtitle'>- {subtitle} -</text>
                         <text className='blurb'>{blurb}</text>
                     </div>
@@ -73,7 +82,9 @@ export default function Project() {
                         })}
                     </div>
 
-                    <text className="awards-header">{awards && "Awards"}{conferences && "Conferences"}{activities && "Partners & Activities"}</text>
+                    {(awards || conferences || activities) && 
+                        <text className="awards-header">{awards && "Awards"}{conferences && "Conferences"}{activities && "Partners & Activities"}</text>
+                    }
                     <div style={{ gap: 7, display: "flex", flexDirection: "column", width: "95%" }}>
                         {awards && awards.map((element) => {
                             return (

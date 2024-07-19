@@ -2,6 +2,7 @@
     "infer": {
         "designation": "sanakama",
         "title": "Infer!",
+        "github": "https://github.com/Samurl88/inferFrontend",
         "subtitle": "Training inference skills with ease.",
         "blurb": "Infer! is an app unlike any other. Infer! is an app unlike any otherInfer! is an app unlike any otherInfer! is an app unlike any otherInfer! is an app unlike any otherInfer! is an app unlike any otherInfer! is an app unlike any otherInfer! is an app unlike any other",
         "info": [
@@ -46,6 +47,7 @@
 "lexify": {
     "designation": "sanakama",
     "title": "Lexify",
+    "github": "https://github.com/Samurl88/lAInguage",
     "subtitle": "Cultural immersion turned interactive study guide.",
     "blurb": "Lexify is an app unlike any other!!! Lexify is an app unlike any other!!! Lexify is an app unlike any other!!! Lexify is an app unlike any other!!! Lexify is an app unlike any other!!! Lexify is an app unlike any other!!!",
     "info": [
@@ -94,6 +96,7 @@
 "nutrivision": {
     "designation": "sanakama",
     "title": "Nutrivision",
+    "github": "https://github.com/agentbobjelly9228/dontdiabetes",
     "subtitle": "Breaking the dieting barrier with innovation.",
     "blurb": "Nutrivision is an app unlike any other. Nutrivision is an app unlike any other. Nutrivision is an app unlike any other. Nutrivision is an app unlike any other. Nutrivision is an app unlike any other.",
     "info": [
@@ -146,7 +149,7 @@
 "memory": {
     "designation": "asdrp",
     "title": "Memory Researcn",
-    "subtitle": "How do we improving memory engaging?",
+    "subtitle": "How do we make memory training engaging?",
     "blurb": "Memory is an subject unlike any other. Memory is an subject unlike any other. Memory is an subject unlike any other. Memory is an subject unlike any other. Memory is an subject unlike any other.",
     "info": [
         {
@@ -208,12 +211,22 @@
         {
             "title": "TOPICS",
             "content": "Leadership, Social Good, Pretty Fun"
+        },
+        {
+            "title": "SOCIALS",
+            "link": true,
+            "content": [
+                {
+                    "title": "Instagram",
+                    "link": "instagram.com"
+                }
+            ]
         }
     ],
     "activities": [
         {
             "title": "CHILDREN'S BOOK PROJECT",
-            "description": "Engaged K-12 in a competitive book drive; raised over 1,000 books"
+            "description": "Engaged K-12 in a competitive book drive; raised >1,000 books"
         },
         {
             "title": "SECOND HARVEST",
@@ -229,14 +242,42 @@
         },
         {
             "title": "JAMBA JUICE",
-            "description": "Sold exclusive BOGO cards to Pre K-12 to fund club endeavors"   
+            "description": "Sold exclusive BOGO cards to Pre-K to 12 to fund club endeavors"   
         },
         {
             "title": "LEGO REPLAY",
-            "description": "Collected LEGO donations from preschool to high school plus local churches - amassed 159 POUNDS"   
+            "description": "Collected LEGO donations from Pre-K to 12 & local churches; amassed 159 POUNDS"   
+        },
+        {
+            "title": "ALLIANCE OF THERAPY DOGS",
+            "description": "Brought therapy dogs to campus for midterms and finals"   
         }
     ],
     "videos": null,
-    "photos": ["/i-project/i-llmcreativity-1.jpeg", "/i-project/i-llmcreativity-2.jpg", "/i-project/i-llmcreativity-3.jpeg"]
+    "photos": ["/i-project/i-service-outreach-1.jpg", "/i-project/i-service-outreach-2.jpeg", "/i-project/i-service-outreach-3.jpeg", "/i-project/i-service-outreach-4.jpeg", "/i-project/i-service-outreach-5.jpg"]
+},
+"bingo": {
+    "designation": "cs50",
+    "title": "SkyBlock BINGO Guide",
+    "github": "https://github.com/Samurl88/cs50fp",
+    "subtitle": "A guide for gameception.",
+    "blurb": "Here's my CS50 Final Project, months in the making! I've created a essentially a helper for a game in a game in a game in a game -- that is, a solver for the Minecraft server Hypixel's game mode Skyblock's monthly event of Bingo, in which a player must complete certain tasks ranging in difficulty within a week. At a broad level, this website reads data from Hypixel's Public API, finds certain keywords & phrases, and gives some solution or relevant information for each Bingo task.",
+    "info": [
+        {
+            "title": "TOPICS",
+            "content": "CS50x, Minecraft"
+        },
+        {
+            "title": "FRONTEND",
+            "content": "HTML, CSS"
+        },
+        {
+            "title": "BACKEND",
+            "content": "Python, Web Scraping (Beautiful Soup), SQLite"
+        }
+    ],
+    "videos": ["https://www.youtube.com/embed/6jFvN45Hw1M?si=shf9IV1A01F60WwR"],
+    "photos": ["/i-project/i-bingo-2.png"]
 }
 }
+
