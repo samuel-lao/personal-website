@@ -89,7 +89,7 @@
         }
     ],
     "videos": ["https://www.youtube.com/embed/jX8G3xIiAdQ?si=rIQ7RMgceix0iVrq"],
-    "photos": ["/i-project/i-lexify.png"]
+    "photos": ["/i-project/i-lexify-l.jpeg"]
 },
 "nutrivision": {
     "designation": "sanakama",
@@ -142,5 +142,61 @@
     ],
     "videos": ["https://www.youtube.com/embed/fRNjSiU6zfQ?si=L-GzrtcpMK5ib2Zx"],
     "photos": ["/i-project/i-nutrivision.png"]
+},
+"memory": {
+    "designation": "asdrp",
+    "title": "Memory",
+    "subtitle": null,
+    "blurb": "Memory is an subject unlike any other. Memory is an subject unlike any other. Memory is an subject unlike any other. Memory is an subject unlike any other. Memory is an subject unlike any other.",
+    "info": [
+        {
+            "title": "TOPICS",
+            "content": "Working Memory, N-Back Task, Game Design"
+        },
+        {
+            "title": "TECHNOLOGY",
+            "content": "React, React Native, Firebase, Figma"
+        }
+    ],
+    "conferences": [
+        {
+            "title": "POSTER PRESENTATION",
+            "description": "IBRO World Congress of Neuroscience, 2023"
+        },
+        {
+            "title": "ORAL TALK",
+            "description": "Southern California Conferences for Undergraduate Research, 2023"
+        }
+    ],
+    "videos": null,
+    "photos": ["/i-project/i-memory-1.jpeg", "/i-project/i-memory-2.jpeg"]
+},
+"llmcreativity": {
+    "designation": "asdrp",
+    "title": "LLM Creativity",
+    "subtitle": null,
+    "blurb": "Creativity is an subject unlike any other. Creativity is an subject unlike any other. Creativity is an subject unlike any other. Creativity is an subject unlike any other. Creativity is an subject unlike any other.",
+    "info": [
+        {
+            "title": "TOPICS",
+            "content": "Working Memory, N-Back Task, Game Design"
+        },
+        {
+            "title": "TECHNOLOGY",
+            "content": "React, React Native, Firebase, Figma"
+        }
+    ],
+    "conferences": [
+        {
+            "title": "POSTER PRESENTATION",
+            "description": "Southern California Conferences for Undergraduate Research, 2023"
+        },
+        {
+            "title": "POSTER PRESENTATION",
+            "description": "Society for the Neuroscience of Creativity, 2024"
+        }
+    ],
+    "videos": null,
+    "photos": ["/i-project/i-llmcreativity-1.jpeg", "/i-project/i-llmcreativity-2.jpg", "/i-project/i-llmcreativity-3.jpeg"]
 }
 }

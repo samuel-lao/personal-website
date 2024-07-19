@@ -20,6 +20,7 @@ export default function Project() {
     const [awards, setAwards] = useState(null)
     const [videos, setVideos] = useState(null)
     const [photos, setPhotos] = useState(null)
+    const [conferences, setConferences] = useState(null)
 
     useEffect(() => {
         if (projects[id]) {
@@ -31,6 +32,7 @@ export default function Project() {
             setAwards(projects[id].awards)
             setVideos(projects[id].videos)
             setPhotos(projects[id].photos)
+            setConferences(projects[id].conferences)
         }
     }, [])
 
@@ -69,10 +71,18 @@ export default function Project() {
                         })}
                     </div>
 
-                    <text className="awards-header">Awards</text>
+                    <text className="awards-header">{awards ? "Awards" : "Conferences"} </text>
                     <div style={{ gap: 7, display: "flex", flexDirection: "column", width: "95%" }}>
-                        {awards.map((element) => {
+                        {awards && awards.map((element) => {
+                            return (
+                                <div style={{ display: "flex", gap: 10, alignItems: "center", flexDirection: "row" }}>
+                                    <div className="info-title">{element.title}</div>
+                                    <div className="info-content">{element.description}</div>
+                                </div>
+                            )
+                        })}
 
+                        {conferences && conferences.map((element) => {
                             return (
                                 <div style={{ display: "flex", gap: 10, alignItems: "center", flexDirection: "row" }}>
                                     <div className="info-title">{element.title}</div>
@@ -84,13 +94,13 @@ export default function Project() {
 
                     {photos && photos.map((photo) => {
                         return (
-                            <img src={photo} width="100%" height="auto" style={{aspectRatio: "16 / 9", objectFit: "cover", objectPosition: "center", borderRadius: "10px", marginTop: 10 }}/>
+                            <img src={photo} width="100%" height="auto" style={{ aspectRatio: "16 / 9", objectFit: "cover", objectPosition: "center", borderRadius: "10px", marginTop: 10 }} />
                         )
                     })}
 
                     {videos && videos.map((video) => {
                         return (
-                            <iframe style={{marginTop: 10}}width="100%" src={video} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe style={{ marginTop: 10 }} width="100%" src={video} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         )
                     })}
 
@@ -103,8 +113,8 @@ export default function Project() {
 
     // If project doesn't exist
     return (
-        <div style={{display: "flex", alignItems: "center", justifyContent: "center", height: "80vh"}}>
-            <text style={{fontFamily: "InterRegular", fontSize: "24px", color: "darkgrayya"}}>This project doesn't exist! (Or I haven't made the page for it yet...)</text>
+        <div style={{ display: "flex", alignItems: "center", justifyContent: "center", height: "80vh" }}>
+            <text style={{ fontFamily: "InterRegular", fontSize: "24px", color: "darkgray" }}>This project doesn't exist! (Or I haven't made the page for it yet...)</text>
         </div>
     )
 }
