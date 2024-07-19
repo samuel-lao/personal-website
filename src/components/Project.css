@@ -43,6 +43,13 @@
     color: #2b9278;
 }
 
+.info-content-link-disabled {
+    font-family: "InterRegular";
+    font-size: 16px;
+    color: #2b9278;
+    opacity: 0.5;
+}
+
 .info-content-link:hover {
     text-decoration: underline;
 }

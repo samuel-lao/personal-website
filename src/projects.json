@@ -12,7 +12,7 @@
                 "content": [
                     {
                         "title": "Try it out!",
-                        "link": "https://www.google.com/"
+                        "link": null
                     }
                 ]
             },
@@ -30,7 +30,7 @@
                 "content": [
                     {
                         "title": "YouTube",
-                        "link": "youtube.com"
+                        "link": "https://www.youtube.com/embed/1W7hd6iPHfk?si=oECL-NEzEEeM89bU"
                     }
                 ]
             }
@@ -56,8 +56,8 @@
             "link": true,
             "content": [
                 {
-                    "title": "Try it out!",
-                    "link": "https://www.google.com/"
+                    "title": "Try it out on iOS!",
+                    "link": "https://testflight.apple.com/join/yIlG7Z75"
                 }
             ]
         },
@@ -75,11 +75,11 @@
             "content": [
                 {
                     "title": "Devpost",
-                    "link": "devpost.com"
+                    "link": "https://devpost.com/software/lexify"
                 },
                 {
                     "title": "YouTube",
-                    "link": "youtube.com"
+                    "link": "https://www.youtube.com/embed/jX8G3xIiAdQ?si=rIQ7RMgceix0iVrq"
                 }
             ]
         }
@@ -105,8 +105,8 @@
             "link": true,
             "content": [
                 {
-                    "title": "Try it out!",
-                    "link": "https://www.google.com/"
+                    "title": "Try it out on iOS!",
+                    "link": "https://testflight.apple.com/join/5zBBEdt5"
                 }
             ]
         },
@@ -123,12 +123,12 @@
             "link": true,
             "content": [
                 {
-                    "title": "Devpost",
-                    "link": "devpost.com"
+                    "title": "Devfolio",
+                    "link": "https://devfolio.co/projects/nutrivision-6351"
                 },
                 {
                     "title": "YouTube",
-                    "link": "youtube.com"
+                    "link": "https://www.youtube.com/embed/fRNjSiU6zfQ?si=L-GzrtcpMK5ib2Zx"
                 }
             ]
         }
@@ -218,7 +218,7 @@
             "content": [
                 {
                     "title": "Instagram",
-                    "link": "instagram.com"
+                    "link": "https://www.instagram.com/vchs_serviceoutreach/"
                 }
             ]
         }
