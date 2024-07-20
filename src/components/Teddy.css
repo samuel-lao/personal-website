@@ -29,4 +29,12 @@
 .incorrect-text {
     color: rgb(200, 46, 46);
     font-family: "InterRegular";
+    padding: 15px;
+}
+
+.incorrect-text-hidden {
+    color: rgb(200, 46, 46);
+    font-family: "InterRegular";
+    opacity: 0;
+    padding: 15px;
 }
