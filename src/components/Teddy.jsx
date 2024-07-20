@@ -1,17 +1,54 @@
-import React, { useState, useCallback, memo } from 'react';
+import React, { useState, useCallback, memo, useEffect } from 'react';
 import { LuArrowRight, LuExternalLink } from "react-icons/lu";
 import { animated, easings, useTransition } from '@react-spring/web';
 import "./Teddy.css";
 import { Link } from 'react-router-dom';
 import teddy from "../assets/teddy.jpeg";
 
+import { GridLoader, PropagateLoader } from 'react-spinners';
+
+// What a secret!
 const SECRET_PASSKEY = "Teddy is objectively the best dog.";
 
-const Display = memo(({ item, answer, setAnswer, wrong, setWrong, handleSubmit }) => {
+// Hey!! Spoilers!!
+const loadingPhrases = ["Accessing the mainframe...", "Validating the centromeres...", "Munging the spamblock...", "In."]
+
+const Display = memo(({ item, answer, setAnswer, wrong, setWrong, handleSubmit, setIndex }) => {
+
+    const [loadingIndex, setLoadingIndex] = useState(0)
+
+    const transitions = useTransition(loadingIndex, {
+        from: { opacity: 0, },
+        enter: { opacity: 1, },
+        leave: { opacity: 0, },
+        exitBeforeEnter: true,
+        config: { duration: 500, easing: easings.easeInOutCubic }
+    });
+
+    useEffect(() => {
+        if (item == 1) {
+            var i = 0;
+            var intr = setInterval(function () {
+                i += 1
+                setLoadingIndex(i)
+                if (i >= loadingPhrases.length) {
+                    clearInterval(intr)
+                    setIndex(2)
+                }
+            }, 2000)
+        }
+    }, [item])
+
+    useEffect(() => {
+        console.log(loadingIndex)
+
+    }, [loadingIndex])
+
+
     if (item === 0) {
         return (
             <>
-                <text style={{ fontFamily: "InterRegular", fontSize: "24px", paddingBottom: "50px" }}>Prove yourself worthy to witness the splendor of Teddy Dog.</text>
+                <text style={{ fontFamily: "InterRegular", fontSize: "24px", marginBottom: "50px", textAlign: "center" }}>Prove yourself worthy to witness the splendor of Teddy Dog.</text>
                 <form onSubmit={handleSubmit} style={{ display: "flex", justifyContent: "center", alignItems: "center", width: "100%", flexDirection: "column" }}>
                     <div style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: 10, width: "100%" }}>
                         <input
@@ -34,7 +71,17 @@ const Display = memo(({ item, answer, setAnswer, wrong, setWrong, handleSubmit }
             </>
         );
     } else if (item === 1) {
-        return <div>loading</div>;
+        return (
+            <div style={{ justifyContent: "center", display: "flex", flexDirection: "column", alignItems: "center", }}>
+                <GridLoader style={{ paddingBottom: "20px" }} color={"orange"} loading={true} size={15} />
+                {transitions((style, i) =>
+                    i !== null ? (
+                        <animated.div style={{fontFamily: "InterRegular", fontSize: "18px", ...style}}>{loadingPhrases[i]}</animated.div>
+                    ) : (
+                        <div />
+                    )
+                )}
+            </div>);
     } else if (item === 2) {
         return (
             <>
@@ -77,7 +124,7 @@ export default function Teddy() {
                 {transitions((style, i) =>
                     i !== null ? (
                         <animated.div style={{ display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column", ...style }}>
-                            <Display item={i} answer={answer} setAnswer={setAnswer} wrong={wrong} setWrong={setWrong} handleSubmit={handleSubmit} />
+                            <Display item={i} answer={answer} setAnswer={setAnswer} wrong={wrong} setWrong={setWrong} handleSubmit={handleSubmit} setIndex={setIndex} />
                         </animated.div>
                     ) : (
                         <div />
