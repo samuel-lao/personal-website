@@ -7,14 +7,8 @@ import Projects from "./components/Projects";
 import { useTransition, animated } from "@react-spring/web";
 import AnimatedRoutes from "./AnimatedRoutes"
 
-function App() {
-  // const location = useLocation();
-  // const transitions = useTransition(location, {
-  //   from: { opacity: 0 },
-  //   enter: { opacity: 1 },
-  //   leave: { opacity: 0 },
-  // });
 
+function App() {
   return (
       <BrowserRouter>
         <Navbar />

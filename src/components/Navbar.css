@@ -31,3 +31,21 @@
     font-family: "InterRegular";
     font-size: 45px;
 }
+
+.darkButton {
+    background-color: purple;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.lightButton {
+    background-color: beige;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}

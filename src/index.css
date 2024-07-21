@@ -19,6 +19,28 @@
   font-weight: 500
 }
 
+:root {
+  --background-color: #f6f6f6;
+  --text-color: black;
+  --navbar-gray: rgba(246, 246, 246, 0.7);
+  --background-highlight: rgb(231, 231, 231);
+  --project-tag-bg: rgb(213, 223, 231);
+  --project-tag-color: #3AACFF;
+  --info-tag-bg: rgb(217, 231, 213);
+  --info-tag-color: #26a944;
+  --info-content-link: #2b9278;
+  --github-color: white;
+  --github-button: #2b9278;
+  --github-button-hover: #1d6352;
+  --gradient-start: #3674A0;
+  --gradient-end: #2b9278;
+}
+
+[data-theme="dark"] {
+  --background-color: #1d1d1d;
+  --text-color: white;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -26,10 +48,5 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #f6f6f6;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  background-color: var(--background-color);
 }

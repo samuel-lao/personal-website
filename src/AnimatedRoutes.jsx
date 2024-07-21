@@ -2,12 +2,13 @@ import { BrowserRouter, Route, Router, Routes, useLocation } from "react-router-
 import { Helmet } from "react-helmet";
 import { useTransition, animated, easings } from "@react-spring/web";
 
-
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Project from "./components/Project";
 import Teddy from "./components/Teddy";
+
+import { useEffect, useState } from "react";
 
 function App() {
   const location = useLocation();
@@ -18,6 +19,19 @@ function App() {
     exitBeforeEnter: true,
     config: { duration: 350, easing: easings.easeInOutCubic }
   });
+
+  const [darkMode, setDarkMode] = useState(true);
+  
+  useEffect(() => {
+    if (darkMode) {
+      document.documentElement.setAttribute("data-theme", "dark")
+      document.querySelector("meta[name='theme-color']").setAttribute("content", "#1d1d1d");
+    } else {
+      document.documentElement.removeAttribute('data-theme');
+      document.querySelector("meta[name='theme-color']").setAttribute("content", "#f6f6f6");
+    }
+  }, [darkMode]); 
+  
 
   return transitions((styles, item) => (
     <animated.div style={{paddingTop: 55, ...styles}}>
