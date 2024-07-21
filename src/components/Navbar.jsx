@@ -1,11 +1,21 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./Navbar.css"
 
 import { LuSun, LuMoon } from "react-icons/lu";
 
 const Navbar = () => {
-const darkMode = true
+const [darkMode, setDarkMode] = useState(false);
+  
+useEffect(() => {
+  if (darkMode) {
+    document.documentElement.setAttribute("data-theme", "dark")
+    document.querySelector("meta[name='theme-color']").setAttribute("content", "#1d1d1d");
+  } else {
+    document.documentElement.removeAttribute('data-theme');
+    document.querySelector("meta[name='theme-color']").setAttribute("content", "#f6f6f6");
+  }
+}, [darkMode]); 
 
  return (
     <header>
@@ -14,7 +24,7 @@ const darkMode = true
             {/* <NavLink to="/about" className={"navbar-text"}>About Me</NavLink> */}
             <NavLink to="/projects" className={"navbar-text"}>Projects</NavLink>
             <NavLink to="/teddy" className={"navbar-text"}>Teddy</NavLink>
-            <div className={darkMode ? "lightButton" : "darkButton"}>
+            <div className={darkMode ? "lightButton" : "darkButton"} onClick={() => {setDarkMode(!darkMode)}}>
                 {darkMode ? <LuSun size={20}/> : <LuMoon color="white" size={20} />}
             </div>
         </nav>

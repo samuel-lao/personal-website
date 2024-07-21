@@ -13,16 +13,11 @@ import serviceoutreach from '../assets/projects/serviceoutreach.jpg';
 import { Link } from 'react-router-dom';
 
 export default function Projects() {
-    // const springs = useSpring({
-    //     from: { y: 100, opacity: 0 },
-    //     to: { y: 0, opacity: 1 },
-    // })
 
     return (
         <animated.div style={{ display: "flex", justifyContent: "center", alignItems: "center", paddingTop: "5vh", flexDirection: "column", }}>
             <div className="category">
                 <text className="category-title">Long Term Projects</text>
-                {/* <text className="category-subtitle">Apps I've made with my team, Sanakama</text> */}
                 {/* <div style={{ width: "clamp(10vw, 60vw, 65rem)" }}> */}
                 <div style={{width: "60rem"}}>
                     <div className="category-container">

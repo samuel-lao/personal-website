@@ -18,23 +18,10 @@ function App() {
     leave: { opacity: 0, y: 25 },
     exitBeforeEnter: true,
     config: { duration: 350, easing: easings.easeInOutCubic }
-  });
-
-  const [darkMode, setDarkMode] = useState(true);
-  
-  useEffect(() => {
-    if (darkMode) {
-      document.documentElement.setAttribute("data-theme", "dark")
-      document.querySelector("meta[name='theme-color']").setAttribute("content", "#1d1d1d");
-    } else {
-      document.documentElement.removeAttribute('data-theme');
-      document.querySelector("meta[name='theme-color']").setAttribute("content", "#f6f6f6");
-    }
-  }, [darkMode]); 
-  
+  });  
 
   return transitions((styles, item) => (
-    <animated.div style={{paddingTop: 55, ...styles}}>
+    <animated.div style={{paddingTop: 75, ...styles}}>
         <Routes location={item}>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />

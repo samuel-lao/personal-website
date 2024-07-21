@@ -2,34 +2,37 @@
     font-family: "InterRegular";
     font-size: 20px;
     text-decoration: none;
-    color: #9B9B9B;
+    color: var(--navbar-text);
     transition: all 0.2s linear;
 }
 
 #navbar a.active {
-    color: black;
+    color: var(--navbar-text-active);
 }
 
 #navbar {
-    background-color: rgba(246, 246, 246, 0.7);
-    backdrop-filter: blur(10px);
+    /* background-color: var(--navbar-bg); */
+    background: transparent;
+    backdrop-filter: blur(30px);
 }
 
 #navbar a:hover {
-    color: black
+    color: var(--navbar-text-active);
 }
 
 .title {
     font-family: "InterBold";
     font-size: 75px;
-	background: linear-gradient(to right, #3674A0 0%, #33AF91 100%);
+	background: linear-gradient(to right, var(--gradient-start) 0%, var(--gradient-end) 100%);
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
+    color: var(--text-color);
 }
 
 .subtitle {
     font-family: "InterRegular";
     font-size: 45px;
+    color: var(--text-color);
 }
 
 .darkButton {

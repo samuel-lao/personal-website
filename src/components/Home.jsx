@@ -8,25 +8,31 @@ import instagram from '../assets/instagram.png';
 import myface from '../assets/myface.png';
 import { Link } from 'react-router-dom';
 
+import { FaLink, FaRegEnvelope } from "react-icons/fa6";
+import { FiGithub } from "react-icons/fi";
+import { FaLinkedinIn } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+
 export default function Home() {
     return (
         <div style={{ height: "85vh", justifyContent: "center", alignItems: "center", display: "flex" }}>
             <div style={{ width: "90vw", display: "flex", justifyContent: "center", gap: 50}}>
                 <div style={{ justifyContent: "center", gap: 15, display: 'flex', flexDirection: "column", maxWidth: "50vw" }}>
                     <div className='title'>Samuel Lao</div>
-                    <div className='subtitle'>Incoming freshman at the <span style={{color: "#990000"}}>University of Pennsylvania</span>. Enjoying life.</div>
+                    <div className='subtitle'>Incoming freshman at the <span style={{color: "var(--penn-red)"}}>University of Pennsylvania</span>. Enjoying life.</div>
                     <div id="social" style={{ display: "flex", gap: 45, paddingTop: 10 }}>
                         <Link to="mailto:samuel.lao100@gmail.com">
-                            <img src={envelope} height={40} width={40} className="social-icon" alt="email" />
+                            {/* <img src={envelope} height={40} width={40} className="social-icon" alt="email" /> */}
+                            <FaRegEnvelope size={40} className='social-icon' color="var(--text-color)" />
                         </Link>
                         <Link to="https://github.com/Samurl88">
-                            <img src={github} height={40} width={40} className="social-icon" alt="github" />
+                            <FiGithub size={40} className='social-icon' color="var(--text-color)" />
                         </Link>
                         <Link to="https://www.linkedin.com/in/samlao/">
-                            <img src={linkedin} height={40} width={40} className="social-icon" alt="linkedin" />
+                            <FaLinkedinIn size={40} className='social-icon' color="var(--text-color)" />
                         </Link>
                         <Link to="https://www.instagram.com/samuel.b.lao/">
-                            <img src={instagram} height={40} width={40} className="social-icon" alt="instagram" />
+                            <FaInstagram size={40} className='social-icon' color="var(--text-color)" />
                         </Link>
                     </div>
                 </div>

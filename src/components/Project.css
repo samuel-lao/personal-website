@@ -2,6 +2,7 @@
     font-size: 30px;
     font-family: "InterBold";
     padding-bottom: 10px;
+    color: var(--text-color);
 }
 
 .i-project-subtitle {
@@ -9,6 +10,8 @@
     font-size: 18px;
     font-style: italic;
     margin-bottom: 25px;
+    color: var(--text-color);
+
     /* background-color: rgb(213, 223, 231); */
     /* color: #3AACFF; */
     /* padding: 5px; */
@@ -21,11 +24,13 @@
     padding-bottom: 10px;
     text-indent: 1em;
     line-height: 1.6;
+    color: var(--text-color);
+
 }
 
 .info-title {
-    background-color: rgb(217, 231, 213);
-    color: #26a944;
+    background-color: var(--info-tag-bg);
+    color: var(--info-tag-color);
     font-family: "InterBold";
     padding: 5px;
     font-size: 12px;
@@ -34,13 +39,15 @@
 
 .info-content {
     font-family: "InterRegular";
-    font-size: 16px
+    font-size: 16px;
+    color: var(--text-color);
+
 }
 
 .info-content-link {
     font-family: "InterRegular";
     font-size: 16px;
-    color: #2b9278;
+    color: var(--link);
     justify-content: center;
     align-items: center;
     display: flex;
@@ -50,7 +57,7 @@
 .info-content-link-disabled {
     font-family: "InterRegular";
     font-size: 16px;
-    color: #2b9278;
+    color: var(--link);
     opacity: 0.5;
     justify-content: center;
     align-items: center;
@@ -69,6 +76,8 @@
     font-family: "InterBold";
     padding-bottom: 5px;
     padding-top: 15px;
+    color: var(--text-color);
+
 }
 
 iframe { 

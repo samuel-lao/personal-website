@@ -48,7 +48,7 @@ const Display = memo(({ item, answer, setAnswer, wrong, setWrong, handleSubmit, 
     if (item === 0) {
         return (
             <>
-                <text style={{ fontFamily: "InterRegular", fontSize: "24px", marginBottom: "50px", textAlign: "center" }}>Prove yourself worthy to witness the splendor of Teddy Dog.</text>
+                <text style={{ fontFamily: "InterRegular", fontSize: "24px", marginBottom: "50px", textAlign: "center", color: "var(--text-color)" }}>Prove yourself worthy to witness the splendor of Teddy Dog.</text>
                 <form onSubmit={handleSubmit} style={{ display: "flex", justifyContent: "center", alignItems: "center", width: "100%", flexDirection: "column" }}>
                     <div style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: 10, width: "100%" }}>
                         <input
@@ -59,7 +59,7 @@ const Display = memo(({ item, answer, setAnswer, wrong, setWrong, handleSubmit, 
                             onChange={e => { setAnswer(e.target.value); setWrong(false); }}
                         />
                         <button type="submit" style={{ all: "unset" }}>
-                            <LuArrowRight className='teddy-submit-input' size={24} />
+                            <LuArrowRight className='teddy-submit-input' size={24} color={"var(--text-color)"}/>
                         </button>
                     </div>
                     <text className={wrong ? 'incorrect-text' : 'incorrect-text-hidden'}>That's wrong!</text>
@@ -76,7 +76,7 @@ const Display = memo(({ item, answer, setAnswer, wrong, setWrong, handleSubmit, 
                 <GridLoader style={{ paddingBottom: "20px" }} color={"orange"} loading={true} size={15} />
                 {transitions((style, i) =>
                     i !== null ? (
-                        <animated.div style={{fontFamily: "InterRegular", fontSize: "18px", ...style}}>{loadingPhrases[i]}</animated.div>
+                        <animated.div style={{fontFamily: "InterRegular", fontSize: "18px", color: "var(--text-color)", ...style}}>{loadingPhrases[i]}</animated.div>
                     ) : (
                         <div />
                     )
@@ -86,7 +86,7 @@ const Display = memo(({ item, answer, setAnswer, wrong, setWrong, handleSubmit, 
         return (
             <>
                 <img src={teddy} width={"50%"} alt="Teddy" />
-                <p style={{ paddingTop: "15px", fontFamily: "InterMedium", fontSize: "20px" }}>It's Teddy!</p>
+                <p style={{ paddingTop: "15px", fontFamily: "InterMedium", fontSize: "20px", color: "var(--text-color)" }}>It's Teddy!</p>
             </>
         );
     }

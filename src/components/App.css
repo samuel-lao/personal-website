@@ -1,5 +1,5 @@
-#social img:hover {
-    background-color: rgb(231, 231, 231);
+.social-icon:hover {
+    background-color: var(--icon-hover);
 }
 
 .social-icon {
@@ -18,7 +18,7 @@
 .category-title {
     font-family: "InterBold";
     font-size: 30px;
-	background: linear-gradient(to right, #3674A0 0%, #33AF91 100%);
+	background: linear-gradient(to right, var(--gradient-start) 0%, var(--gradient-end) 100%);
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
     text-align: center;
@@ -71,13 +71,14 @@
     padding-top: 10px;
     font-size: 20px;
     font-family: "InterMedium";
+    color: var(--text-color);
 }
 
 .project-subtitle {
     font-size: 18px;
     font-family: "InterRegular";
     text-align: center;
-
+    color: var(--text-color);
 }
 
 .tag-container {
@@ -89,8 +90,8 @@
 }
 
 .project-tag {
-    background-color: rgb(213, 223, 231);
-    color: #3AACFF;
+    background-color: var(--project-tag-bg);
+    color: var(--project-tag-color);
     font-family: "InterBold";
     padding: 5px;
     font-size: 12px;

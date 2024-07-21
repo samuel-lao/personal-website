@@ -22,7 +22,9 @@
 :root {
   --background-color: #f6f6f6;
   --text-color: black;
-  --navbar-gray: rgba(246, 246, 246, 0.7);
+  --navbar-bg: rgba(246, 246, 246, 0.7);
+  --navbar-text: #9B9B9B;
+  --navbar-text-active: black;
   --background-highlight: rgb(231, 231, 231);
   --project-tag-bg: rgb(213, 223, 231);
   --project-tag-color: #3AACFF;
@@ -34,12 +36,39 @@
   --github-button-hover: #1d6352;
   --gradient-start: #3674A0;
   --gradient-end: #2b9278;
+  --penn-red: #990000;
+  --link: #2b9278;
+  --icon-hover: rgb(231, 231, 231);
 }
 
 [data-theme="dark"] {
-  --background-color: #1d1d1d;
-  --text-color: white;
+  --background-color: rgb(32, 32, 35);
+  --text-color: rgba(255, 255, 255, 0.92);
+  --navbar-bg: rgba(26, 26, 26, 0.2);
+  --navbar-text: #9B9B9B;
+  --navbar-text-active: white;
+  --background-highlight: rgb(231, 231, 231);
+  --project-tag-bg: rgba(69, 94, 113, 0.423);
+  --project-tag-color: #99d0fa;
+  --info-tag-bg: rgba(115, 231, 80, 0.12);
+  --info-tag-color: #4dcc6b;
+  --info-content-link: #2b9278;
+  --github-color: white;
+  --github-button: #2b9278;
+  --github-button-hover: #1d6352;
+  --gradient-start: #67a3c9;
+  --gradient-end: #66d7b8;
+  --penn-red: #cf2222;
+  --link: #2b9278;
+  --icon-hover: rgb(59, 59, 59);
 }
+
+[data-theme="dark"] img {
+  filter: brightness(0.8);
+  transition: filter 0.4s, transform .4s background-color 0.2s linear;
+}
+
+
 
 body {
   margin: 0;
@@ -49,4 +78,5 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--background-color);
+  transition: background-color 0.4s
 }
