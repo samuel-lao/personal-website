@@ -10,7 +10,7 @@ import Teddy from "./components/Teddy";
 
 import { useEffect, useState } from "react";
 
-function App() {
+function App({ darkMode, setDarkMode }) {
   const location = useLocation();
   const transitions = useTransition(location, {
     from: { opacity: 0, y: 25 },
@@ -19,6 +19,11 @@ function App() {
     exitBeforeEnter: true,
     config: { duration: 350, easing: easings.easeInOutCubic }
   });  
+
+  useEffect(() => {
+    console.log(darkMode)
+  }, [darkMode])
+
 
   return transitions((styles, item) => (
     <animated.div style={{paddingTop: 75, ...styles}}>

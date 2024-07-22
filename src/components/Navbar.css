@@ -6,6 +6,14 @@
     transition: all 0.2s linear;
 }
 
+.navbar-title {
+    font-family: "InterRegular";
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--navbar-text-active);
+    transition: all 0.2s linear;
+}
+
 #navbar a.active {
     color: var(--navbar-text-active);
 }
@@ -42,6 +50,11 @@
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+    transition: background-color 0.4s;
+}
+
+.darkButton:hover {
+    background-color: rgb(85, 14, 85);
 }
 
 .lightButton {
@@ -51,4 +64,9 @@
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+    transition: background-color 0.4s;
+}
+
+.lightButton:hover {
+    background-color: rgb(200, 200, 178);
 }

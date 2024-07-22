@@ -119,8 +119,8 @@ iframe {
 
 .tooltip {
     opacity: 0;
-    background-color: rgb(231, 231, 231);
-    color: black;
+    background-color: var(--tooltip-bg);
+    color: var(--text-color);
     border-radius: 6px;
     padding: 5px;
     font-family: "InterRegular";

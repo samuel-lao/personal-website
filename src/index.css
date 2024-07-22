@@ -39,11 +39,12 @@
   --penn-red: #990000;
   --link: #2b9278;
   --icon-hover: rgb(231, 231, 231);
+  --tooltip-bg: rgb(231, 231, 231);
 }
 
 [data-theme="dark"] {
   --background-color: rgb(32, 32, 35);
-  --text-color: rgba(255, 255, 255, 0.92);
+  --text-color: rgba(255, 255, 255, 0.82);
   --navbar-bg: rgba(26, 26, 26, 0.2);
   --navbar-text: #9B9B9B;
   --navbar-text-active: white;
@@ -61,6 +62,7 @@
   --penn-red: #cf2222;
   --link: #2b9278;
   --icon-hover: rgb(59, 59, 59);
+  --tooltip-bg: rgb(83, 83, 83);
 }
 
 [data-theme="dark"] img {
