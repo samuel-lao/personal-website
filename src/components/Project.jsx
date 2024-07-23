@@ -50,7 +50,7 @@ export default function Project() {
     if (title)
         return (
             <animated.div style={{ display: "flex", alignItems: "center", paddingTop: "5vh", flexDirection: "column", paddingBottom: "5vh" }}>
-                <div style={{ width: "45rem", alignItems: "center", display: "flex", flexDirection: "column", gap: 10, position: "relative" }}>
+                <div style={{ width: "clamp(1rem, 90vw, 45rem)", alignItems: "center", display: "flex", flexDirection: "column", gap: 10, position: "relative" }}>
                     <div style={{ display: "flex", justifyContent: "space-between", position: "absolute", left: 0, right: 0, top: 0, }}>
                         {
                             designation == "sanakama" &&

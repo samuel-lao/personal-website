@@ -120,7 +120,7 @@ export default function Teddy() {
 
     return (
         <div style={{ display: "flex", alignItems: "center", justifyContent: "center", height: "75vh" }}>
-            <div style={{ width: "45rem", display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column" }}>
+            <div style={{ width: "clamp(1rem, 90vw, 45rem)", display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column" }}>
                 {transitions((style, i) =>
                     i !== null ? (
                         <animated.div style={{ display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column", ...style }}>
