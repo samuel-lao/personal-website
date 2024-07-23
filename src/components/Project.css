@@ -155,10 +155,6 @@ iframe {
     display: none;
 }
 
-.github-container-mobile:hover {
-    display: none;
-
-}
 
 
 @media only screen and (max-width: 510px) {
@@ -194,7 +190,7 @@ iframe {
     }
 
     .github-container-mobile {
-        margin-top: 2em;
+        margin-top: 1em;
         display: flex;
         gap: 10px;
         color: white;
