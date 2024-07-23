@@ -28,19 +28,9 @@
     color: var(--navbar-text-active);
 }
 
-.title {
-    font-family: "InterBold";
-    font-size: 75px;
-	background: linear-gradient(to right, var(--gradient-start) 0%, var(--gradient-end) 100%);
-	background-clip: text;
-	-webkit-text-fill-color: transparent;
-    color: var(--text-color);
-}
-
-.subtitle {
-    font-family: "InterRegular";
-    font-size: 45px;
-    color: var(--text-color);
+.myface {
+    width: clamp(20px, 30vw, 400px);
+    height: clamp(20px, 30vw, 400px);
 }
 
 .darkButton {
@@ -69,4 +59,70 @@
 
 .lightButton:hover {
     background-color: rgb(200, 200, 178);
+}
+
+.home-container {
+    width: clamp(1rem, 80vw, 80rem);
+    display: flex;
+    gap: 20
+}
+
+.title {
+    font-family: "InterBold";
+    /* font-size: 75px; */
+    background: linear-gradient(to right, var(--gradient-start) 0%, var(--gradient-end) 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: var(--text-color);
+    font-size: clamp(30px, 7vw, 75px)
+}
+
+.subtitle {
+    font-family: "InterRegular";
+    /* font-size: 45px; */
+    font-size: clamp(20px, 3.5vw, 45px);
+    color: var(--text-color);
+}
+
+.home-info-container {
+    justify-content: center;
+    gap: 15;
+    display: flex;
+    flex-direction: column
+}
+
+@media only screen and (max-width: 864px) {
+    .title {
+        font-family: "InterBold";
+        /* font-size: 75px; */
+        background: linear-gradient(to right, var(--gradient-start) 0%, var(--gradient-end) 100%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: var(--text-color);
+        font-size: clamp(30px, 7vw, 75px)
+    }
+
+    .subtitle {
+        font-family: "InterRegular";
+        /* font-size: 45px; */
+        font-size: clamp(20px, 3.5vw, 45px);
+        color: var(--text-color);
+    }
+
+    .home-container {
+        width: clamp(1rem, 80vw, 80rem);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20
+    }
+
+    .home-info-container {
+        align-items: center;
+    }
+
+    .subtitle {
+        text-align: center;
+    }
 }

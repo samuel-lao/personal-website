@@ -133,6 +133,18 @@ export default function Project() {
                         })}
                     </div>
 
+                    {photos && photos.map((photo) => {
+                        return (
+                            <img src={photo} width="100%" height="auto" style={{ aspectRatio: "16 / 9", objectFit: "cover", objectPosition: "center", borderRadius: "10px", marginTop: 10 }} />
+                        )
+                    })}
+
+                    {videos && videos.map((video) => {
+                        return (
+                            <iframe style={{ marginTop: 10 }} width="100%" src={video} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        )
+                    })}
+                    { (github || designation) && <div style={{marginTop: "1rem"}} />}
                     {
                         github &&
                         <Link to={github} style={{ textDecoration: "none", width: "clamp(1rem, 90vw, 45rem)" }}>
@@ -140,7 +152,6 @@ export default function Project() {
                                 <img src={githuboutline} style={{ width: "2.5em" }} className="github-icon-mobile" />
                                 <div>See repository</div>
                                 <LuExternalLink color='white' />
-
                             </div>
                         </Link>
                     }
@@ -153,21 +164,6 @@ export default function Project() {
                             </div>
                         </div>
                     }
-
-
-                    {photos && photos.map((photo) => {
-                        return (
-                            <img src={photo} width="100%" height="auto" style={{ aspectRatio: "16 / 9", objectFit: "cover", objectPosition: "center", borderRadius: "10px", marginTop: 10 }} />
-                        )
-                    })}
-
-                    {videos && videos.map((video) => {
-                        return (
-                            <iframe style={{ marginTop: 10 }} width="100%" src={video} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        )
-                    })}
-
-
 
                 </div>
             </animated.div>

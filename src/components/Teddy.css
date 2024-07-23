@@ -6,6 +6,8 @@
     font-size: 20px;
     padding: 5px;
     color: var(--text-color);
+    border-radius: 0px;
+    transition: background-color 0.4s
     /* transition: border-width 0.2s linear; */
 }
 

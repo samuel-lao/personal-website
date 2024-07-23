@@ -16,10 +16,10 @@ import { FaInstagram } from "react-icons/fa";
 export default function Home() {
     return (
         <div style={{ height: "85vh", justifyContent: "center", alignItems: "center", display: "flex" }}>
-            <div style={{ width: "90vw", display: "flex", justifyContent: "center", gap: 50}}>
-                <div style={{ justifyContent: "center", gap: 15, display: 'flex', flexDirection: "column", maxWidth: "50vw" }}>
+            <div className="home-container">
+                <div className="home-info-container">
                     <div className='title'>Samuel Lao</div>
-                    <div className='subtitle'>Incoming freshman at the <span style={{color: "var(--penn-red)"}}>University of Pennsylvania</span>. Enjoying life.</div>
+                    <div className='subtitle'>Incoming freshman at the <span style={{ color: "var(--penn-red)" }}>University of Pennsylvania</span>. Enjoying life.</div>
                     <div id="social" style={{ display: "flex", gap: 45, paddingTop: 10 }}>
                         <Link to="mailto:samuel.lao100@gmail.com">
                             {/* <img src={envelope} height={40} width={40} className="social-icon" alt="email" /> */}
@@ -36,7 +36,7 @@ export default function Home() {
                         </Link>
                     </div>
                 </div>
-                <img src={myface} height={400} width={400} alt="my face" />
+                <img src={myface} className='myface' alt="my face" />
             </div>
         </div>
     )

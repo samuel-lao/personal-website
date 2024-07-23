@@ -167,7 +167,6 @@ iframe {
         display: none;
     }
 
-
     .designation-container-mobile {
         background-color: var(--tooltip-bg);
         color: var(--text-color);
@@ -190,7 +189,7 @@ iframe {
     }
 
     .github-container-mobile {
-        margin-top: 1em;
+        /* margin-top: 1em; */
         display: flex;
         gap: 10px;
         color: white;
