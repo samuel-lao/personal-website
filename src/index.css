@@ -19,7 +19,7 @@
   font-weight: 500
 }
 
-:root {
+[data-theme="light"] {
   --background-color: #f6f6f6;
   --text-color: black;
   --navbar-bg: rgba(246, 246, 246, 0.7);
@@ -80,5 +80,4 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--background-color);
-  transition: background-color 0.4s
 }
