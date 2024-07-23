@@ -5,11 +5,9 @@ import { LuExternalLink } from "react-icons/lu";
 
 import githubwhite from "../assets/githubwhite.svg"
 import githuboutline from "../assets/github-circle-outline.svg"
-import sanakama from "../assets/sanakama.png"
-import asdrp from "../assets/asdrp.png"
-import cs50 from "../assets/cs50.png"
 
 import projects from "../projects.json"
+import data from "../data.json"
 
 import "./Project.css"
 
@@ -42,35 +40,20 @@ export default function Project() {
             setActivities(projects[id].activities)
             setVideos(projects[id].videos)
             setPhotos(projects[id].photos)
-
         }
     }, [])
 
 
     if (title)
         return (
-            <animated.div style={{ display: "flex", alignItems: "center", paddingTop: "5vh", flexDirection: "column", paddingBottom: "5vh" }}>
+            <animated.div style={{ display: "flex", alignItems: "center", paddingTop: "5vh", flexDirection: "column", paddingBottom: "5vh" }} className="entire-container">
                 <div style={{ width: "clamp(1rem, 90vw, 45rem)", alignItems: "center", display: "flex", flexDirection: "column", gap: 10, position: "relative" }}>
                     <div style={{ display: "flex", justifyContent: "space-between", position: "absolute", left: 0, right: 0, top: 0, }}>
                         {
-                            designation == "sanakama" &&
+                            designation &&
                             <>
-                                <img src={sanakama} className='designation' />
-                                <div className='tooltip'>Built by Team Sanakama (Sam, Nathan, Kabir, Matthew)!</div>
-                            </>
-                        }
-                        {
-                            designation == "asdrp" &&
-                            <>
-                                <img src={asdrp} className='designation' />
-                                <div className='tooltip'>Researched in the Aspiring Scholars Directed Research Program.</div>
-                            </>
-                        }
-                        {
-                            designation == "cs50" &&
-                            <>
-                                <img src={cs50} className='designation' />
-                                <div className='tooltip'>Completed as a final project for Harvard's online CS50x course.</div>
+                                <img src={data.designations[designation].img} className='designation' />
+                                <div className='tooltip'>{data.designations[designation].description}</div>
                             </>
                         }
                         {
@@ -82,7 +65,7 @@ export default function Project() {
                     </div>
                     <div style={{ display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column" }}>
                         <text className='i-project-title'>{title}</text>
-                        <text className='i-project-subtitle'>- {subtitle} -</text>
+                        <text className='i-project-subtitle'>{subtitle}</text>
                         <text className='blurb'>{blurb}</text>
                     </div>
                     <div style={{ gap: 7, display: "flex", flexDirection: "column", width: "95%" }}>
@@ -97,14 +80,14 @@ export default function Project() {
                                                     <Link to={item.link} style={{ textDecoration: "none" }} className="info-content-link">
                                                         {/* <text className="info-content-link">{item.title}{element.content.length > 1 && element.content.slice(-1)[0] != item ? "," : ""}</text> */}
                                                         <text>{item.title}</text>
-                                                        <LuExternalLink color='#2b9278'/>
+                                                        <LuExternalLink color='#2b9278' />
                                                     </Link>
                                                 )
                                             else
                                                 return (
                                                     <div className="info-content-link-disabled">
                                                         <text>{item.title}{element.content.length > 1 && element.content.slice(-1)[0] != item ? "," : ""}</text>
-                                                        <LuExternalLink color='#2b9278' opacity={0.5}/>
+                                                        <LuExternalLink color='#2b9278' opacity={0.5} />
                                                     </div>
                                                 )
                                         })}
@@ -149,6 +132,28 @@ export default function Project() {
                             )
                         })}
                     </div>
+
+                    {
+                        github &&
+                        <Link to={github} style={{ textDecoration: "none", width: "clamp(1rem, 90vw, 45rem)" }}>
+                            <div className="github-container-mobile">
+                                <img src={githuboutline} style={{ width: "2.5em" }} className="github-icon-mobile" />
+                                <div>See repository</div>
+                                <LuExternalLink color='white' />
+
+                            </div>
+                        </Link>
+                    }
+                    {
+                        designation &&
+                        <div style={{ width: "clamp(1rem, 90vw, 45rem)" }}>
+                            <div className="designation-container-mobile">
+                                <img src={data.designations[designation].img} className='designation-mobile' />
+                                <div>{data.designations[designation].description}</div>
+                            </div>
+                        </div>
+                    }
+
 
                     {photos && photos.map((photo) => {
                         return (

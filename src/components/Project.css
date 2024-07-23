@@ -3,6 +3,7 @@
     font-family: "InterBold";
     padding-bottom: 10px;
     color: var(--text-color);
+    text-align: center;
 }
 
 .i-project-subtitle {
@@ -11,6 +12,7 @@
     font-style: italic;
     margin-bottom: 25px;
     color: var(--text-color);
+    text-align: center;
 
     /* background-color: rgb(213, 223, 231); */
     /* color: #3AACFF; */
@@ -80,11 +82,11 @@
 
 }
 
-iframe { 
+iframe {
     width: 100%;
     aspect-ratio: 16 / 9;
     border-radius: 10px;
-  }
+}
 
 .github-btn {
     display: flex;
@@ -98,7 +100,6 @@ iframe {
     border-radius: 10px;
     padding: 5px;
     transition: background-color 0.2s linear;
-
 }
 
 .github-btn:hover {
@@ -107,7 +108,7 @@ iframe {
 
 .designation {
     width: 2.5em;
-    border-radius: 10px;  
+    border-radius: 10px;
     padding: 5px;
     transition: transform 0.2s ease-in-out, background-color 0.2s linear;
 }
@@ -127,10 +128,90 @@ iframe {
     z-index: 1;
     position: absolute;
     top: -2.3rem;
-    
-    transition: opacity 0.2s linear; 
+    text-align: center;
+
+    transition: opacity 0.2s linear;
 }
 
-.designation:hover + .tooltip{
+.designation:hover+.tooltip {
     opacity: 1;
+}
+
+
+.designation-container-mobile {
+    display: none;
+}
+
+.designation-mobile {
+    display: none;
+}
+
+.github-container-mobile {
+    display: none;
+
+}
+
+.github-icon-mobile {
+    display: none;
+}
+
+.github-container-mobile:hover {
+    display: none;
+
+}
+
+
+@media only screen and (max-width: 510px) {
+    .github-btn {
+        display: none;
+
+    }
+
+    .designation {
+        display: none;
+    }
+
+
+    .designation-container-mobile {
+        background-color: var(--tooltip-bg);
+        color: var(--text-color);
+        border-radius: 6px;
+        padding: 5px 10px;
+        font-family: "InterRegular";
+        z-index: 1;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .designation-mobile {
+        width: 2em;
+        border-radius: 10px;
+        padding: 5px;
+        transition: transform 0.2s ease-in-out, background-color 0.2s linear;
+        display: inline;
+
+    }
+
+    .github-container-mobile {
+        margin-top: 2em;
+        display: flex;
+        gap: 10px;
+        color: white;
+        background-color: #2b9278;
+        align-items: center;
+        font-family: "InterMedium";
+        border-radius: 6px;
+        padding: 5px 10px;
+        transition: background-color 0.2s linear;
+    }
+
+    .github-icon-mobile {
+        width: 2em;
+        display: inline;
+    }
+
+    .github-container-mobile:hover {
+        background-color: #1d6352;
+    }
 }

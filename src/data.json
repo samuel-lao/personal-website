@@ -1,0 +1,16 @@
+{
+    "designations": {
+        "sanakama": {
+            "description": "Built by Team Sanakama - Sam, Nathan, Kabir, & Matthew!",
+            "img": "/i-project/sanakama.png"
+        },
+        "asdrp": {
+            "description": "Researched in the Aspiring Scholars Directed Research Program.",
+            "img": "/i-project/asdrp.png"
+        },
+        "cs50": {
+            "description": "Completed as a final project for Harvard's online CS50x course.",
+            "img": "/i-project/cs50.png"
+        }
+    }
+}

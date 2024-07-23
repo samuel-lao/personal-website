@@ -203,7 +203,7 @@
     "photos": ["/i-project/i-llmcreativity-1.jpeg", "/i-project/i-llmcreativity-2.jpg", "/i-project/i-llmcreativity-3.jpeg"]
 },
 "serviceoutreach": {
-    "designation": "vchs",
+    "designation": null,
     "title": "The Service Outreach Club",
     "subtitle": "Giving back. A lot.",
     "blurb": "Serving is an subject unlike any other. Serving is an subject unlike any other. Serving is an subject unlike any other. Serving is an subject unlike any other. Serving is an subject unlike any other.",
@@ -258,9 +258,9 @@
 },
 "bingo": {
     "designation": "cs50",
-    "title": "SkyBlock BINGO Guide",
+    "title": "BINGO Guide",
     "github": "https://github.com/Samurl88/cs50fp",
-    "subtitle": "A guide for gameception.",
+    "subtitle": "A guide to gameception.",
     "blurb": "Here's my CS50 Final Project, months in the making! I've created a essentially a helper for a game in a game in a game in a game -- that is, a solver for the Minecraft server Hypixel's game mode Skyblock's monthly event of Bingo, in which a player must complete certain tasks ranging in difficulty within a week. At a broad level, this website reads data from Hypixel's Public API, finds certain keywords & phrases, and gives some solution or relevant information for each Bingo task.",
     "info": [
         {
