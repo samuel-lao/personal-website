@@ -20,17 +20,31 @@
 
 #navbar {
     /* background-color: var(--navbar-bg); */
-    background: transparent;
+    background: transparent; 
     backdrop-filter: blur(30px);
+    display: flex;
+    gap: 50;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    padding-bottom: 20px;
 }
 
 #navbar a:hover {
     color: var(--navbar-text-active);
 }
 
+.home-super-container {
+    height: 100vh
+}
+
 .myface {
-    width: clamp(20px, 30vw, 400px);
-    height: clamp(20px, 30vw, 400px);
+    width: clamp(200px, 30vw, 400px);
+    height: clamp(200px, 30vw, 400px);
 }
 
 .darkButton {
@@ -64,12 +78,11 @@
 .home-container {
     width: clamp(1rem, 80vw, 80rem);
     display: flex;
-    gap: 20
+    gap: 20px;
 }
 
 .title {
     font-family: "InterBold";
-    /* font-size: 75px; */
     background: linear-gradient(to right, var(--gradient-start) 0%, var(--gradient-end) 100%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -84,12 +97,37 @@
     color: var(--text-color);
 }
 
+.social-icon:hover {
+    background-color: var(--icon-hover);
+}
+
+.social-icon {
+    padding: 10px;
+    border-radius: 15px;   
+    transition: background-color 0.2s linear;    
+}
+
+.social-container {
+   display: flex; 
+   gap: 45px;
+   padding-top: 10px
+}
+
 .home-info-container {
     justify-content: center;
     gap: 15;
     display: flex;
-    flex-direction: column
+    flex-direction: column;
 }
+
+.home-container-small {
+    display: none;
+}
+
+#navbar-small {
+    display: none;
+}
+
 
 @media only screen and (max-width: 864px) {
     .title {
@@ -99,23 +137,17 @@
         background-clip: text;
         -webkit-text-fill-color: transparent;
         color: var(--text-color);
-        font-size: clamp(30px, 7vw, 75px)
+        font-size: clamp(30px, 10vw, 75px);
     }
 
     .subtitle {
         font-family: "InterRegular";
-        /* font-size: 45px; */
-        font-size: clamp(20px, 3.5vw, 45px);
+        font-size: clamp(20px, 5vw, 45px);
         color: var(--text-color);
     }
 
     .home-container {
-        width: clamp(1rem, 80vw, 80rem);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 20
+        display: none;
     }
 
     .home-info-container {
@@ -124,5 +156,56 @@
 
     .subtitle {
         text-align: center;
+    }
+    
+    .home-container-small {
+        width: clamp(1rem, 80vw, 80rem);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 5vh;
+    }
+
+    .home-super-container {
+        height: 90vh;
+    }
+
+    .social-container {
+        gap: 35px;
+     }
+}
+
+
+/* Change navbar to compressed */
+@media only screen and (max-width: 760px) {
+    #navbar {
+        display: none;
+    }
+
+    #navbar-small {
+        background: transparent; 
+        backdrop-filter: blur(30px);
+        display: flex;
+        gap: 50;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10px;
+        width: 100vw;
+        position: fixed;
+        top: 0;
+        z-index: 100;
+        padding-bottom: 10px;
+    }
+
+    .nav-menu-btn {
+        border: solid 1px var(--navbar-text);
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        transition: background-color 0.4s;
     }
 }

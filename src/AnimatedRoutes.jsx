@@ -26,7 +26,7 @@ function App({ darkMode, setDarkMode }) {
 
 
   return transitions((styles, item) => (
-    <animated.div style={{paddingTop: 75, ...styles}}>
+    <animated.div style={{paddingTop: "75px", ...styles}}>
         <Routes location={item}>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />

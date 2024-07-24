@@ -39,10 +39,10 @@ const Display = memo(({ item, answer, setAnswer, wrong, setWrong, handleSubmit, 
         }
     }, [item])
 
-    useEffect(() => {
-        console.log(loadingIndex)
 
-    }, [loadingIndex])
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
 
 
     if (item === 0) {

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './App.css';
 
 import envelope from '../assets/envelope.png';
@@ -14,15 +14,18 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 
 export default function Home() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
+
     return (
-        <div style={{ height: "85vh", justifyContent: "center", alignItems: "center", display: "flex" }}>
+        <div style={{ justifyContent: "center", alignItems: "center", display: "flex", marginTop: "-75px" }} className="home-super-container">
             <div className="home-container">
                 <div className="home-info-container">
                     <div className='title'>Samuel Lao</div>
                     <div className='subtitle'>Incoming freshman at the <span style={{ color: "var(--penn-red)" }}>University of Pennsylvania</span>. Enjoying life.</div>
-                    <div id="social" style={{ display: "flex", gap: 45, paddingTop: 10 }}>
+                    <div id="social" className='social-container'>
                         <Link to="mailto:samuel.lao100@gmail.com">
-                            {/* <img src={envelope} height={40} width={40} className="social-icon" alt="email" /> */}
                             <FaRegEnvelope size={40} className='social-icon' color="var(--text-color)" />
                         </Link>
                         <Link to="https://github.com/Samurl88">
@@ -38,6 +41,26 @@ export default function Home() {
                 </div>
                 <img src={myface} className='myface' alt="my face" />
             </div>
+
+            <div className="home-container-small">
+                    <div className='title'>Samuel Lao</div>
+                    <img src={myface} className='myface' alt="my face" />
+                    <div className='subtitle'>Incoming freshman at the <span style={{ color: "var(--penn-red)" }}>University of Pennsylvania</span>. Enjoying life.</div>
+                    <div id="social" className='social-container'>
+                        <Link to="mailto:samuel.lao100@gmail.com">
+                            <FaRegEnvelope size={30} className='social-icon' color="var(--text-color)" />
+                        </Link>
+                        <Link to="https://github.com/Samurl88">
+                            <FiGithub size={30} className='social-icon' color="var(--text-color)" />
+                        </Link>
+                        <Link to="https://www.linkedin.com/in/samlao/">
+                            <FaLinkedinIn size={30} className='social-icon' color="var(--text-color)" />
+                        </Link>
+                        <Link to="https://www.instagram.com/samuel.b.lao/">
+                            <FaInstagram size={30} className='social-icon' color="var(--text-color)" />
+                        </Link>
+                    </div>
+                </div>
         </div>
     )
 }
