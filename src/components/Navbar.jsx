@@ -25,6 +25,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
 
             <nav id="navbar-small">
                 <div style={{ display: "flex", justifyContent: "flex-end", alignItems: "center", width: "90vw", gap: "10px" }}>
+                    <Link to="/" className={"navbar-title"}>Samuel Lao</Link>
                     <div className={darkMode ? "lightButton" : "darkButton"} onClick={() => { setDarkMode(!darkMode) }}>
                         {darkMode ? <LuSun size={20} /> : <LuMoon color="white" size={20} />}
                     </div>

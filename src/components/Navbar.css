@@ -6,14 +6,6 @@
     transition: all 0.2s linear;
 }
 
-.navbar-title {
-    font-family: "InterRegular";
-    font-size: 20px;
-    text-decoration: none;
-    color: var(--navbar-text-active);
-    transition: all 0.2s linear;
-}
-
 #navbar a.active {
     color: var(--navbar-text-active);
 }
@@ -280,6 +272,15 @@
 
     .menu-btn:hover {
         background-color: lightgray;
+    }
+
+    .navbar-title {
+        font-family: "InterRegular";
+        font-size: 20px;
+        text-decoration: none;
+        color: var(--navbar-text-active);
+        transition: all 0.2s linear;
+        flex: 1
     }
 
 }

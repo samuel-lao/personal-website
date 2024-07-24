@@ -13,7 +13,6 @@ import serviceoutreach from '../assets/projects/serviceoutreach.jpg';
 import { Link } from 'react-router-dom';
 
 export default function Projects() {
-
     return (
         <animated.div className="entire-projects-container">
             <div className="category">
