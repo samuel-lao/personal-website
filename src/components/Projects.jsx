@@ -15,7 +15,7 @@ import { Link } from 'react-router-dom';
 export default function Projects() {
 
     return (
-        <animated.div style={{ display: "flex", justifyContent: "center", alignItems: "center", paddingTop: "5vh", flexDirection: "column", }}>
+        <animated.div className="entire-projects-container">
             <div className="category">
                 <text className="category-title">Long Term Projects</text>
                 <div className="row-container">
