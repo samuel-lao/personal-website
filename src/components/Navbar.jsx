@@ -4,7 +4,9 @@ import "./Navbar.css"
 
 import { LuSun, LuMoon, LuMenu } from "react-icons/lu";
 
+
 const Navbar = ({ darkMode, setDarkMode }) => {
+    const [open, setOpen] = useState(false)
     return (
         <header>
             <nav id="navbar">
@@ -23,14 +25,24 @@ const Navbar = ({ darkMode, setDarkMode }) => {
 
             <nav id="navbar-small">
                 <div style={{ display: "flex", justifyContent: "flex-end", alignItems: "center", width: "90vw", gap: "10px" }}>
-                    <NavLink to="/" className={"navbar-text"}>(Temp)</NavLink>
-                    <NavLink to="/projects" className={"navbar-text"}>Projects</NavLink>
-                    <NavLink to="/teddy" className={"navbar-text"}>Teddy</NavLink>
                     <div className={darkMode ? "lightButton" : "darkButton"} onClick={() => { setDarkMode(!darkMode) }}>
                         {darkMode ? <LuSun size={20} /> : <LuMoon color="white" size={20} />}
                     </div>
-                    <div className="nav-menu-btn">
+                    <div className={open ? "nav-menu-btn-open" : "nav-menu-btn"} onClick={() => setOpen(!open)}>
                         <LuMenu size={20} color="var(--text-color)" />
+                        {open &&
+                            <div className="menu">
+                                <NavLink to="/" className="menu-item">
+                                    <div className="menu-btn">Home</div>
+                                </NavLink>
+                                <NavLink to="/projects" className="menu-item">
+                                    <div className="menu-btn">Projects</div>
+                                </NavLink>
+                                <NavLink to="/teddy" className="menu-item">
+                                    <div className="menu-btn">Teddy</div>
+                                </NavLink>
+                            </div>
+                        }
                     </div>
                 </div>
             </nav>

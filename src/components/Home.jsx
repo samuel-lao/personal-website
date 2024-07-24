@@ -12,6 +12,8 @@ import { FaLink, FaRegEnvelope } from "react-icons/fa6";
 import { FiGithub } from "react-icons/fi";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
+import { LuArrowRight } from "react-icons/lu";
+
 
 export default function Home() {
     useEffect(() => {
@@ -19,7 +21,7 @@ export default function Home() {
     }, [])
 
     return (
-        <div style={{ justifyContent: "center", alignItems: "center", display: "flex", marginTop: "-75px" }} className="home-super-container">
+        <div style={{ justifyContent: "center", alignItems: "center", display: "flex" }} className="home-super-container">
             <div className="home-container">
                 <div className="home-info-container">
                     <div className='title'>Samuel Lao</div>
@@ -46,6 +48,10 @@ export default function Home() {
                     <div className='title'>Samuel Lao</div>
                     <img src={myface} className='myface' alt="my face" />
                     <div className='subtitle'>Incoming freshman at the <span style={{ color: "var(--penn-red)" }}>University of Pennsylvania</span>. Enjoying life.</div>
+                    <div className="view-projects-btn">
+                        <div>View Projects</div>
+                        <LuArrowRight />
+                    </div>
                     <div id="social" className='social-container'>
                         <Link to="mailto:samuel.lao100@gmail.com">
                             <FaRegEnvelope size={30} className='social-icon' color="var(--text-color)" />

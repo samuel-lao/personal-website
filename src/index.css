@@ -40,6 +40,7 @@
   --link: #2b9278;
   --icon-hover: rgb(231, 231, 231);
   --tooltip-bg: rgb(231, 231, 231);
+  --navbar-menu-btn-open: rgba(109, 109, 109, 0.2);
 }
 
 [data-theme="dark"] {
@@ -63,6 +64,7 @@
   --link: #2b9278;
   --icon-hover: rgb(59, 59, 59);
   --tooltip-bg: rgb(83, 83, 83);
+  --navbar-menu-btn-open: rgba(171, 171, 171, 0.2);
 }
 
 [data-theme="dark"] img {
