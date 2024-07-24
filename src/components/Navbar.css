@@ -53,6 +53,22 @@
     transition: background-color 0.4s;
 }
 
+.samButton {
+    /* background-color: var(--text-color); */
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: transform 0.2s ease-in-out;
+}
+
+
+
+#ee:hover > #ff {
+    transform: rotate(15deg);
+}
+
 .darkButton:hover {
     background-color: rgb(85, 14, 85);
 }
@@ -75,6 +91,8 @@
     width: clamp(1rem, 80vw, 80rem);
     display: flex;
     gap: 20px;
+    /* justify-content: center; */
+    align-items: center;
 }
 
 .title {
@@ -83,7 +101,8 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
     color: var(--text-color);
-    font-size: clamp(30px, 7vw, 75px)
+    font-size: clamp(30px, 7vw, 75px);
+    line-height: 1em;
 }
 
 .subtitle {
@@ -91,6 +110,7 @@
     /* font-size: 45px; */
     font-size: clamp(20px, 3.5vw, 45px);
     color: var(--text-color);
+    margin: 10px 0;
 }
 
 .social-icon:hover {
@@ -106,15 +126,15 @@
 .social-container {
     display: flex;
     gap: 45px;
-    padding-top: 10px;
     margin-left: -10px
 }
 
 .home-info-container {
     justify-content: center;
-    gap: 15;
+    gap: 15px;
     display: flex;
     flex-direction: column;
+    /* align-items: center; */
 }
 
 .home-container-small {
@@ -134,8 +154,8 @@
     color: var(--background-color);
     padding: 10px;
     border-radius: 10px;
-    font-family: "InterRegular";
-    font-size: clamp(15px, 2.5vw, 45px);
+    font-family: "InterMedium";
+    font-size: clamp(20px, 2vw, 26px);
     transition: background-color 0.4s;
     text-decoration: none;
 }
@@ -144,6 +164,13 @@
     background-color: var(--view-projects-btn-hover);
 }
 
+.navbar-title {
+    font-family: "InterMedium";
+    font-size: 24px;
+    text-decoration: none;
+    color: var(--navbar-text-active);
+    transition: all 0.2s linear;
+}
 
 
 @media only screen and (max-width: 814px) {
@@ -192,6 +219,21 @@
 
     .social-container {
         gap: 35px;
+    }
+
+    .view-projects-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        background-color: var(--gradient-end);
+        color: var(--background-color);
+        padding: 10px;
+        border-radius: 10px;
+        font-family: "InterRegular";
+        font-size: clamp(15px, 2.5vw, 45px);
+        transition: background-color 0.4s;
+        text-decoration: none;
     }
 }
 
@@ -271,16 +313,6 @@
     }
 
     .menu-btn:hover {
-        background-color: lightgray;
+        background-color: var(--navbar-menu-hover);
     }
-
-    .navbar-title {
-        font-family: "InterRegular";
-        font-size: 20px;
-        text-decoration: none;
-        color: var(--navbar-text-active);
-        transition: all 0.2s linear;
-        flex: 1
-    }
-
 }

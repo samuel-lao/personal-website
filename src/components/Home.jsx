@@ -12,7 +12,10 @@ import { FaLink, FaRegEnvelope } from "react-icons/fa6";
 import { FiGithub } from "react-icons/fi";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
-import { LuArrowRight } from "react-icons/lu";
+import { RiArrowRightSLine } from "react-icons/ri";
+import { RxDoubleArrowRight } from "react-icons/rx";
+
+
 
 
 export default function Home() {
@@ -26,18 +29,22 @@ export default function Home() {
                 <div className="home-info-container">
                     <div className='title'>Samuel Lao</div>
                     <div className='subtitle'>Incoming freshman at the <span style={{ color: "var(--penn-red)" }}>University of Pennsylvania</span>. Enjoying life.</div>
+                    <Link to="/projects" className="view-projects-btn" style={{alignSelf: "flex-start", marginTop: "clamp(0px, 0.7vw, 20px)", marginBottom: "clamp(0px, 0.7vw, 10px)"}}>
+                        <div>View Projects</div>
+                        <RxDoubleArrowRight size={25} />
+                    </Link>
                     <div id="social" className='social-container'>
                         <Link to="mailto:samuel.lao100@gmail.com">
-                            <FaRegEnvelope size={40} className='social-icon' color="var(--text-color)" />
+                            <FaRegEnvelope size={"clamp(20px, 4vw, 40px)"} className='social-icon' color="var(--text-color)" />
                         </Link>
                         <Link to="https://github.com/Samurl88">
-                            <FiGithub size={40} className='social-icon' color="var(--text-color)" />
+                            <FiGithub size={"clamp(20px, 4vw, 40px)"} className='social-icon' color="var(--text-color)" />
                         </Link>
                         <Link to="https://www.linkedin.com/in/samlao/">
-                            <FaLinkedinIn size={40} className='social-icon' color="var(--text-color)" />
+                            <FaLinkedinIn size={"clamp(20px, 4vw, 40px)"} className='social-icon' color="var(--text-color)" />
                         </Link>
                         <Link to="https://www.instagram.com/samuel.b.lao/">
-                            <FaInstagram size={40} className='social-icon' color="var(--text-color)" />
+                            <FaInstagram size={"clamp(20px, 4vw, 40px)"} className='social-icon' color="var(--text-color)" />
                         </Link>
                     </div>
                 </div>
@@ -51,8 +58,8 @@ export default function Home() {
                 {/* <div style={{justifyContent: "center", alignItems: "center", display: "flex", flexDirection: "column"}}> */}
                 <Link to="/projects" className="view-projects-btn">
                     <div>View Projects</div>
-                    <LuArrowRight />
-                </Link>
+                    <RxDoubleArrowRight size={25} />
+                    </Link>
                 <div id="social" className='social-container'>
                     <Link to="mailto:samuel.lao100@gmail.com">
                         <FaRegEnvelope size={30} className='social-icon' color="var(--text-color)" />

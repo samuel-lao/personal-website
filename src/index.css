@@ -25,6 +25,7 @@
   --navbar-bg: rgba(246, 246, 246, 0.7);
   --navbar-text: #9B9B9B;
   --navbar-text-active: black;
+  --navbar-menu-hover: #d2d2d2;
   --background-highlight: rgb(231, 231, 231);
   --project-tag-bg: rgb(213, 223, 231);
   --project-tag-color: #3AACFF;
@@ -50,6 +51,7 @@
   --navbar-bg: rgba(26, 26, 26, 0.2);
   --navbar-text: #9B9B9B;
   --navbar-text-active: white;
+  --navbar-menu-hover: rgb(71, 71, 77);
   --background-highlight: rgb(231, 231, 231);
   --project-tag-bg: rgba(69, 94, 113, 0.423);
   --project-tag-color: #99d0fa;
