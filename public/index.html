@@ -4,7 +4,8 @@
 <head>
   <script>
     (function () {
-      const darkMode = localStorage.getItem("darkMode") ? JSON.parse(localStorage.getItem("darkMode")) : false
+      const preference = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      const darkMode = localStorage.getItem("darkMode") ? JSON.parse(localStorage.getItem("darkMode")) : preference
       if (darkMode) {
         document.documentElement.setAttribute("data-theme", "dark")
         document.querySelector("meta[name='theme-color']").setAttribute("content", "rgb(32, 32, 35)");

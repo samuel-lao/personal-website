@@ -11,7 +11,8 @@ import { useState, useEffect } from "react";
 
 function App() {
 
-  const [darkMode, setDarkMode] = useState(localStorage.getItem("darkMode") ? JSON.parse(localStorage.getItem("darkMode")) : false);
+  const preference = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  const [darkMode, setDarkMode] = useState(localStorage.getItem("darkMode") ? JSON.parse(localStorage.getItem("darkMode")) : preference);
   // const [darkMode, setDarkMode] = useState(true)
 
   useEffect(() => {
