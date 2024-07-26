@@ -10,6 +10,8 @@ import Teddy from "./components/Teddy";
 
 import { useEffect, useState } from "react";
 
+import projects from "./projects.json"
+
 function App({ darkMode, setDarkMode }) {
   const location = useLocation();
   const transitions = useTransition(location, {
@@ -24,8 +26,25 @@ function App({ darkMode, setDarkMode }) {
     console.log(darkMode)
   }, [darkMode])
 
+  const tabTitles = {
+    "/": "Home",
+    "/projects": "Projects",
+    "/teddy": "Teddy"
+  }
+
+  const getProject = () => {
+    let str = location.pathname.split("/");
+    let project = str[str.length - 1];
+    let title = projects[project]?.tab || null
+
+    return title;
+  }
 
   return transitions((styles, item) => (
+    <>
+          <Helmet>
+        <title>Samuel Lao | {tabTitles[location.pathname] || getProject() || "404"}</title>
+      </Helmet>
     <animated.div style={{paddingTop: "75px", ...styles}}>
         <Routes location={item}>
           <Route path="/" element={<Home />} />
@@ -33,7 +52,9 @@ function App({ darkMode, setDarkMode }) {
           <Route path="/projects/:id" element={<Project />} />
           <Route path="/teddy" element={<Teddy />} />
         </Routes>
+        <footer style={{width: "100%", paddingBottom: 20, textAlign: "center", fontFamily: "InterRegular", fontSize: "12px", color: "var(--light-text-color)"}}>© Samuel Lao. Every single right reserved. They're mine.</footer>
     </animated.div>
+    </>
   ));
 }
 

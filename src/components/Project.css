@@ -21,12 +21,13 @@
 }
 
 .blurb {
-    font-size: 18px;
+    /* or should i do 18px? */
+    font-size: 18px; 
     font-family: "InterRegular";
-    padding-bottom: 10px;
     text-indent: 1em;
     line-height: 1.6;
     color: var(--text-color);
+    display: block;
 
 }
 
@@ -99,11 +100,12 @@ iframe {
     font-family: "InterMedium";
     border-radius: 10px;
     padding: 5px;
-    transition: background-color 0.2s linear;
+    transition: background-color 0.2s linear, transform 0.2s ease-in-out;
 }
 
 .github-btn:hover {
     background-color: #1d6352;
+    transform: rotate(15deg) scale(1.2);
 }
 
 .designation {

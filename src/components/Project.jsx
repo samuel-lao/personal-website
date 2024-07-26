@@ -66,7 +66,13 @@ export default function Project() {
                     <div style={{ display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column" }}>
                         <text className='i-project-title'>{title}</text>
                         <text className='i-project-subtitle'>{subtitle}</text>
-                        <text className='blurb'>{blurb}</text>
+                        <text style={{paddingBottom: "10px"}}>
+                            {blurb.split('\n').map((line, index) => (
+                                <React.Fragment key={index}>
+                                    <text className='blurb'>{line}</text>
+                                </React.Fragment>
+                            ))}
+                        </text>
                     </div>
                     <div style={{ gap: 7, display: "flex", flexDirection: "column", width: "95%" }}>
                         {info.map((element) => {
@@ -78,7 +84,6 @@ export default function Project() {
                                             if (item.link)
                                                 return (
                                                     <Link to={item.link} style={{ textDecoration: "none" }} className="info-content-link">
-                                                        {/* <text className="info-content-link">{item.title}{element.content.length > 1 && element.content.slice(-1)[0] != item ? "," : ""}</text> */}
                                                         <text>{item.title}</text>
                                                         <LuExternalLink color='#2b9278' />
                                                     </Link>
@@ -144,7 +149,7 @@ export default function Project() {
                             <iframe style={{ marginTop: 10 }} width="100%" src={video} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         )
                     })}
-                    { (github || designation) && <div style={{marginTop: "1rem"}} />}
+                    {(github || designation) && <div style={{ marginTop: "1rem" }} />}
                     {
                         github &&
                         <Link to={github} style={{ textDecoration: "none", width: "clamp(1rem, 90vw, 45rem)" }}>

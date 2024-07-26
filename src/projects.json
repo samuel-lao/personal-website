@@ -2,9 +2,10 @@
     "infer": {
         "designation": "sanakama",
         "title": "Infer!",
+        "tab": "Infer",
         "github": "https://github.com/Samurl88/inferFrontend",
         "subtitle": "Training inference skills with ease.",
-        "blurb": "Infer! offers an engaging way to train one's inference skills - by watching movies! After pivotal scenes, the app prompts the user with a series of customized questions tailored to testing one's inference abilities. I created this app for a teenager I know who has autism - she found her previous inference training boring (simply consisting of repeated flashcards), so I worked with her to make her favorite pasttime - watching movies - into something she could also learn from!",
+        "blurb": "Infer! offers an engaging way to train one's inference skills - by watching movies! After pivotal scenes, the app prompts the user with a series of customized questions tailored to testing one's inference abilities.\nI created this app for someone I know who has autism - she found her previous inference training boring (simply consisting of repeated flashcards), so I worked with her to make her favorite pasttime - watching movies - into something she could also learn from!",
         "info": [
             {
                 "title": "DEMO",
@@ -41,243 +42,287 @@
                 "description": "3rd place winner of the Congressional App Challenge"
             }
         ],
-        "videos": ["https://www.youtube.com/embed/1W7hd6iPHfk?si=oECL-NEzEEeM89bU"],
-        "photos": ["/i-project/i-infer.png"]
+        "videos": [
+            "https://www.youtube.com/embed/1W7hd6iPHfk?si=oECL-NEzEEeM89bU"
+        ],
+        "photos": [
+            "/i-project/i-infer.png"
+        ]
     },
-"lexify": {
-    "designation": "sanakama",
-    "title": "Lexify",
-    "github": "https://github.com/Samurl88/lAInguage",
-    "subtitle": "Cultural immersion turned interactive study guide.",
-    "blurb": "Lexify brings ease to assimilating into a foreign culture by providing an interactive study platform for language learning. Quickly highlight and define words on the go and gain mastery over all your terms with auto-generated flashcards, multiple choice, and free response questions.",
-    "info": [
-        {
-            "title": "DEMO",
-            "link": true,
-            "content": [
-                {
-                    "title": "Try it out on iOS!",
-                    "link": "https://testflight.apple.com/join/yIlG7Z75"
-                }
-            ]
-        },
-        {
-            "title": "FRONTEND",
-            "content": "React Native"
-        },
-        {
-            "title": "BACKEND",
-            "content": "Firebase, Gemini Pro 1.5"
-        },
-        {
-            "title": "SOCIALS",
-            "link": true,
-            "content": [
-                {
-                    "title": "Devpost",
-                    "link": "https://devpost.com/software/lexify"
-                },
-                {
-                    "title": "YouTube",
-                    "link": "https://www.youtube.com/embed/jX8G3xIiAdQ?si=rIQ7RMgceix0iVrq"
-                }
-            ]
-        }
-    ],
-    "awards": [
-        {
-            "title": "WINNER",
-            "description": "Winner of AI for Change Hackathon"
-        }
-    ],
-    "videos": ["https://www.youtube.com/embed/jX8G3xIiAdQ?si=rIQ7RMgceix0iVrq"],
-    "photos": ["/i-project/i-lexify-l.jpeg"]
-},
-"nutrivision": {
-    "designation": "sanakama",
-    "title": "Nutrivision",
-    "github": "https://github.com/agentbobjelly9228/dontdiabetes",
-    "subtitle": "Breaking the dieting barrier with innovation.",
-    "blurb": "Nutrivision encourages healthy eating without the usual severe dieting pressure. Easing the process by crunching all the numbers in the background, Nutrivision analyzes user-submitted photos of food and offers only gentle suggestions and a single graph - in or out of your zone.",
-    "info": [
-        {
-            "title": "DEMO",
-            "link": true,
-            "content": [
-                {
-                    "title": "Try it out on iOS!",
-                    "link": "https://testflight.apple.com/join/5zBBEdt5"
-                }
-            ]
-        },
-        {
-            "title": "FRONTEND",
-            "content": "React Native"
-        },
-        {
-            "title": "BACKEND",
-            "content": "Firebase, GPT-3.5, IMSDB, Python"
-        },
-        {
-            "title": "SOCIALS",
-            "link": true,
-            "content": [
-                {
-                    "title": "Devfolio",
-                    "link": "https://devfolio.co/projects/nutrivision-6351"
-                },
-                {
-                    "title": "YouTube",
-                    "link": "https://www.youtube.com/embed/fRNjSiU6zfQ?si=L-GzrtcpMK5ib2Zx"
-                }
-            ]
-        }
-    ],
-    "awards": [
-        {
-            "title": "FIRST PLACE",
-            "description": "Winner of San Mateo Hacks 2024"
-        },
-        {
-            "title": "BEST THEME",
-            "description": "Winner of Best Theme Award of San Mateo Hacks 2024"
-        }
-    ],
-    "videos": ["https://www.youtube.com/embed/fRNjSiU6zfQ?si=L-GzrtcpMK5ib2Zx"],
-    "photos": ["/i-project/i-nutrivision.png"]
-},
-"memory": {
-    "designation": "asdrp",
-    "title": "Memory Research",
-    "subtitle": "How do we make memory training engaging?",
-    "blurb": "Gamified the dual n-back task, a cognitive exercise that improves working memory, to target the dopaminergic system and enhance user engagement. Conducted numerous studies to gauge effectiveness of novel n-back game. Work performed in the Jahanikia NeuroLab.",
-    "info": [
-        {
-            "title": "TOPICS",
-            "content": "Working Memory, N-Back Task, Game Design"
-        },
-        {
-            "title": "TECHNOLOGY",
-            "content": "React, React Native, Firebase, Figma"
-        }
-    ],
-    "conferences": [
-        {
-            "title": "POSTER PRESENTATION",
-            "description": "IBRO World Congress of Neuroscience, 2023"
-        },
-        {
-            "title": "ORAL TALK",
-            "description": "Southern California Conferences for Undergraduate Research, 2023"
-        }
-    ],
-    "videos": null,
-    "photos": ["/i-project/i-memory-1.jpeg", "/i-project/i-memory-2.jpeg"]
-},
-"llmcreativity": {
-    "designation": "asdrp",
-    "title": "LLM Creativity Research",
-    "subtitle": "How creative is AI?",
-    "blurb": "Evaluated human creativity in comparison to AI creativity by adapting existing creativity assessments and inventories (AUT, RAT, TTCT Figural, and NEO-FFI). Proposed perspective with which to view AI in regards to creative endeaors and designing platform to bolster human creativity. Led team in the Jahanikia NeuroLab.",
-    "info": [
-        {
-            "title": "TOPICS",
-            "content": "AI, Convergent Thinking, Divergent Thinking, RAT, AUT, TTCT"
-        },
-        {
-            "title": "TECHNOLOGY",
-            "content": "R, GPT-3.5"
-        }
-    ],
-    "conferences": [
-        {
-            "title": "POSTER PRESENTATION",
-            "description": "Southern California Conferences for Undergraduate Research, 2023"
-        },
-        {
-            "title": "POSTER PRESENTATION",
-            "description": "Society for the Neuroscience of Creativity, 2024"
-        }
-    ],
-    "videos": null,
-    "photos": ["/i-project/i-llmcreativity-1.jpeg", "/i-project/i-llmcreativity-2.jpg", "/i-project/i-llmcreativity-3.jpeg"]
-},
-"serviceoutreach": {
-    "designation": null,
-    "title": "Service Outreach Club",
-    "subtitle": "Giving back. A lot.",
-    "blurb": "Co-led my school's Service Outreach Club. Prepared and led weekly club meetings to engage members in numerous volunteer activities, both on and off campus. Club became so widespread that quite literally half the school joined.",
-    "info": [
-        {
-            "title": "TOPICS",
-            "content": "Leadership, Social Good, Pretty Fun"
-        },
-        {
-            "title": "SOCIALS",
-            "link": true,
-            "content": [
-                {
-                    "title": "Instagram",
-                    "link": "https://www.instagram.com/vchs_serviceoutreach/"
-                }
-            ]
-        }
-    ],
-    "activities": [
-        {
-            "title": "CHILDREN'S BOOK PROJECT",
-            "description": "Engaged K-12 in a competitive book drive; raised >1,000 books"
-        },
-        {
-            "title": "SECOND HARVEST",
-            "description": "Volunteered outside of school at food distribution and packing center"
-        },
-        {
-            "title": "KIDS AGAINST HUNGER",
-            "description": "Sold Valentine's Day 'Candy Grams' to raise funds for KAH"   
-        },
-        {
-            "title": "SCHOOL-WIDE PROJECT",
-            "description": "Engaged school in several organized stations (Crayon Initiative: sorting crayons, Shepherd's Gate: tie blankets, CityServe: homeless toiletry kits)"   
-        },
-        {
-            "title": "JAMBA JUICE",
-            "description": "Sold exclusive BOGO cards to Pre-K to 12 to fund club endeavors"   
-        },
-        {
-            "title": "LEGO REPLAY",
-            "description": "Collected LEGO donations from Pre-K to 12 & local churches; amassed 159 POUNDS"   
-        },
-        {
-            "title": "ALLIANCE OF THERAPY DOGS",
-            "description": "Brought therapy dogs to campus for midterms and finals"   
-        }
-    ],
-    "videos": null,
-    "photos": ["/i-project/i-service-outreach-1.jpg", "/i-project/i-service-outreach-2.jpeg", "/i-project/i-service-outreach-3.jpeg", "/i-project/i-service-outreach-4.jpeg", "/i-project/i-service-outreach-5.jpg"]
-},
-"bingo": {
-    "designation": "cs50",
-    "title": "SkyBlock Bingo Guide",
-    "github": "https://github.com/Samurl88/cs50fp",
-    "subtitle": "A guide to gameception.",
-    "blurb": "Completed as my CS50x final project. An automated guide for a Hypixel SkyBlock's Bingo, a super niche game in a game in a game in a game. The website fetches data from Hypixel's public API, seeks out significant keywords or phrases, and generates a solution to a Bingo task or webscrapes relevant information.",
-    "info": [
-        {
-            "title": "TOPICS",
-            "content": "CS50x, Minecraft"
-        },
-        {
-            "title": "FRONTEND",
-            "content": "HTML, CSS"
-        },
-        {
-            "title": "BACKEND",
-            "content": "Python, Web Scraping (Beautiful Soup), SQLite"
-        }
-    ],
-    "videos": ["https://www.youtube.com/embed/6jFvN45Hw1M?si=shf9IV1A01F60WwR"],
-    "photos": ["/i-project/i-bingo-2.png"]
+    "lexify": {
+        "designation": "sanakama",
+        "title": "Lexify",
+        "tab": "Lexify",
+        "github": "https://github.com/Samurl88/lAInguage",
+        "subtitle": "Cultural immersion turned interactive study guide.",
+        "blurb": "Lexify brings ease to assimilating into a foreign culture by providing an interactive study platform for language learning. Quickly highlight and define words on the go and gain mastery over all your terms with auto-generated flashcards, multiple choice, and free response questions.",
+        "info": [
+            {
+                "title": "DEMO",
+                "link": true,
+                "content": [
+                    {
+                        "title": "Try it out on iOS!",
+                        "link": "https://testflight.apple.com/join/yIlG7Z75"
+                    }
+                ]
+            },
+            {
+                "title": "FRONTEND",
+                "content": "React Native"
+            },
+            {
+                "title": "BACKEND",
+                "content": "Firebase, Gemini Pro 1.5"
+            },
+            {
+                "title": "SOCIALS",
+                "link": true,
+                "content": [
+                    {
+                        "title": "Devpost",
+                        "link": "https://devpost.com/software/lexify"
+                    },
+                    {
+                        "title": "YouTube",
+                        "link": "https://www.youtube.com/embed/jX8G3xIiAdQ?si=rIQ7RMgceix0iVrq"
+                    }
+                ]
+            }
+        ],
+        "awards": [
+            {
+                "title": "WINNER",
+                "description": "Winner of AI for Change Hackathon"
+            }
+        ],
+        "videos": [
+            "https://www.youtube.com/embed/jX8G3xIiAdQ?si=rIQ7RMgceix0iVrq"
+        ],
+        "photos": [
+            "/i-project/i-lexify-l.jpeg"
+        ]
+    },
+    "nutrivision": {
+        "designation": "sanakama",
+        "title": "Nutrivision",
+        "tab": "Nutrivision",
+        "github": "https://github.com/agentbobjelly9228/dontdiabetes",
+        "subtitle": "Breaking the dieting barrier with innovation.",
+        "blurb": "Nutrivision encourages healthy eating without the usual severe dieting pressure. Easing the process by crunching all the numbers in the background, Nutrivision analyzes user-submitted photos of food and offers only gentle suggestions and a single graph - in or out of your zone.",
+        "info": [
+            {
+                "title": "DEMO",
+                "link": true,
+                "content": [
+                    {
+                        "title": "Try it out on iOS!",
+                        "link": "https://testflight.apple.com/join/5zBBEdt5"
+                    }
+                ]
+            },
+            {
+                "title": "FRONTEND",
+                "content": "React Native"
+            },
+            {
+                "title": "BACKEND",
+                "content": "Firebase, GPT-3.5, IMSDB, Python"
+            },
+            {
+                "title": "SOCIALS",
+                "link": true,
+                "content": [
+                    {
+                        "title": "Devfolio",
+                        "link": "https://devfolio.co/projects/nutrivision-6351"
+                    },
+                    {
+                        "title": "YouTube",
+                        "link": "https://www.youtube.com/embed/fRNjSiU6zfQ?si=L-GzrtcpMK5ib2Zx"
+                    }
+                ]
+            }
+        ],
+        "awards": [
+            {
+                "title": "FIRST PLACE",
+                "description": "Winner of San Mateo Hacks 2024"
+            },
+            {
+                "title": "BEST THEME",
+                "description": "Winner of Best Theme Award of San Mateo Hacks 2024"
+            }
+        ],
+        "videos": [
+            "https://www.youtube.com/embed/fRNjSiU6zfQ?si=L-GzrtcpMK5ib2Zx"
+        ],
+        "photos": [
+            "/i-project/i-nutrivision.png"
+        ]
+    },
+    "memory": {
+        "designation": "asdrp",
+        "title": "Memory Research",
+        "tab": "Memory",
+        "subtitle": "How do we make memory training engaging?",
+        "blurb": "Gamified the dual n-back task, a cognitive exercise that improves working memory, to target the dopaminergic system and enhance user engagement. Conducted numerous studies to gauge effectiveness of novel n-back game. Work performed in the Jahanikia NeuroLab.",
+        "info": [
+            {
+                "title": "TOPICS",
+                "content": "Working Memory, N-Back Task, Game Design"
+            },
+            {
+                "title": "TECHNOLOGY",
+                "content": "React, React Native, Firebase, Figma"
+            }
+        ],
+        "conferences": [
+            {
+                "title": "POSTER PRESENTATION",
+                "description": "IBRO World Congress of Neuroscience, 2023"
+            },
+            {
+                "title": "ORAL TALK",
+                "description": "Southern California Conferences for Undergraduate Research, 2023"
+            }
+        ],
+        "videos": null,
+        "photos": [
+            "/i-project/i-memory-1.jpeg",
+            "/i-project/i-memory-2.jpeg"
+        ]
+    },
+    "llmcreativity": {
+        "designation": "asdrp",
+        "title": "LLM Creativity Research",
+        "tab": "LLM Creativity",
+        "subtitle": "How creative is AI?",
+        "blurb": "Evaluated human creativity in comparison to AI creativity by adapting existing creativity assessments and inventories (AUT, RAT, TTCT Figural, and NEO-FFI). Proposed perspective with which to view AI in regards to creative endeaors and designing platform to bolster human creativity. Led team in the Jahanikia NeuroLab.",
+        "info": [
+            {
+                "title": "TOPICS",
+                "content": "AI, Convergent Thinking, Divergent Thinking, RAT, AUT, TTCT"
+            },
+            {
+                "title": "TECHNOLOGY",
+                "content": "R, GPT-3.5"
+            }
+        ],
+        "conferences": [
+            {
+                "title": "POSTER PRESENTATION",
+                "description": "Southern California Conferences for Undergraduate Research, 2023"
+            },
+            {
+                "title": "POSTER PRESENTATION",
+                "description": "Society for the Neuroscience of Creativity, 2024"
+            }
+        ],
+        "videos": null,
+        "photos": [
+            "/i-project/i-llmcreativity-1.jpeg",
+            "/i-project/i-llmcreativity-2.jpg",
+            "/i-project/i-llmcreativity-3.jpeg"
+        ]
+    },
+    "serviceoutreach": {
+        "designation": null,
+        "title": "Service Outreach Club",
+        "tab": "Service Outreach",
+        "subtitle": "Giving back. A lot.",
+        "blurb": "Co-led my school's Service Outreach Club. Prepared and led weekly club meetings to engage members in numerous volunteer activities, both on and off campus. Club became so widespread that quite literally half the school joined.",
+        "info": [
+            {
+                "title": "TOPICS",
+                "content": "Leadership, Social Good, Pretty Fun"
+            },
+            {
+                "title": "SOCIALS",
+                "link": true,
+                "content": [
+                    {
+                        "title": "Instagram",
+                        "link": "https://www.instagram.com/vchs_serviceoutreach/"
+                    }
+                ]
+            }
+        ],
+        "activities": [
+            {
+                "title": "CHILDREN'S BOOK PROJECT",
+                "description": "Engaged K-12 in a competitive book drive; raised >1,000 books"
+            },
+            {
+                "title": "SECOND HARVEST",
+                "description": "Volunteered outside of school at food distribution and packing center"
+            },
+            {
+                "title": "KIDS AGAINST HUNGER",
+                "description": "Sold Valentine's Day 'Candy Grams' to raise funds for KAH"
+            },
+            {
+                "title": "SCHOOL-WIDE PROJECT",
+                "description": "Engaged school in several organized stations (Crayon Initiative: sorting crayons, Shepherd's Gate: tie blankets, CityServe: homeless toiletry kits)"
+            },
+            {
+                "title": "JAMBA JUICE",
+                "description": "Sold exclusive BOGO cards to Pre-K to 12 to fund club endeavors"
+            },
+            {
+                "title": "LEGO REPLAY",
+                "description": "Collected LEGO donations from Pre-K to 12 & local churches; amassed 159 POUNDS"
+            },
+            {
+                "title": "ALLIANCE OF THERAPY DOGS",
+                "description": "Brought therapy dogs to campus for midterms and finals"
+            }
+        ],
+        "videos": null,
+        "photos": [
+            "/i-project/i-service-outreach-1.jpg",
+            "/i-project/i-service-outreach-2.jpeg",
+            "/i-project/i-service-outreach-3.jpeg",
+            "/i-project/i-service-outreach-4.jpeg",
+            "/i-project/i-service-outreach-5.jpg"
+        ]
+    },
+    "bingo": {
+        "designation": "cs50",
+        "title": "SkyBlock Bingo Guide",
+        "tab": "Bingo",
+        "github": "https://github.com/Samurl88/cs50fp",
+        "subtitle": "A guide to gameception.",
+        "blurb": "Completed as my CS50x final project. An automated guide for a Hypixel SkyBlock's Bingo, a super niche game in a game in a game in a game. The website fetches data from Hypixel's public API, seeks out significant keywords or phrases, and generates a solution to a Bingo task or webscrapes relevant information.",
+        "info": [
+            {
+                "title": "TOPICS",
+                "content": "CS50x, Minecraft"
+            },
+            {
+                "title": "FRONTEND",
+                "content": "HTML, CSS"
+            },
+            {
+                "title": "BACKEND",
+                "content": "Python, Web Scraping (Beautiful Soup), SQLite"
+            },
+            {
+                "title": "SOCIALS",
+                "link": true,
+                "content": [
+                    {
+                        "title": "YouTube",
+                        "link": "https://www.youtube.com/watch?v=6jFvN45Hw1M"
+                    }
+                ]
+            }
+        ],
+        "videos": [
+            "https://www.youtube.com/embed/6jFvN45Hw1M?si=shf9IV1A01F60WwR"
+        ],
+        "photos": [
+            "/i-project/i-bingo-2.png"
+        ]
+    }
 }
-}
-

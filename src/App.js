@@ -13,7 +13,6 @@ function App() {
 
   const preference = window.matchMedia("(prefers-color-scheme: dark)").matches;
   const [darkMode, setDarkMode] = useState(localStorage.getItem("darkMode") ? JSON.parse(localStorage.getItem("darkMode")) : preference);
-  // const [darkMode, setDarkMode] = useState(true)
 
   useEffect(() => {
     document.body.style.transition = "background-color 0.4s"
@@ -21,25 +20,24 @@ function App() {
 
   useEffect(() => {
     if (darkMode) {
-        document.documentElement.setAttribute("data-theme", "dark")
-        document.querySelector("meta[name='theme-color']").setAttribute("content", "rgb(32, 32, 35)");
-        localStorage.setItem("darkMode", true)
+      document.documentElement.setAttribute("data-theme", "dark")
+      document.querySelector("meta[name='theme-color']").setAttribute("content", "rgb(32, 32, 35)");
+      localStorage.setItem("darkMode", true)
     } else {
-        // document.documentElement.removeAttribute('data-theme');
-        document.documentElement.setAttribute("data-theme", "light")
-        document.querySelector("meta[name='theme-color']").setAttribute("content", "#f6f6f6");
-        localStorage.setItem("darkMode", false)
+      // document.documentElement.removeAttribute('data-theme');
+      document.documentElement.setAttribute("data-theme", "light")
+      document.querySelector("meta[name='theme-color']").setAttribute("content", "#f6f6f6");
+      localStorage.setItem("darkMode", false)
     }
-}, [darkMode]);
+  }, [darkMode]);
 
-
-  // if (darkMode !== null)
-  // if (false)
   return (
+    <>
       <BrowserRouter>
-        <Navbar darkMode={darkMode} setDarkMode={setDarkMode}/>
+        <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
         <AnimatedRoutes darkMode={darkMode} setDarkMode={setDarkMode} />
       </BrowserRouter>
+    </>
   );
 }
 
