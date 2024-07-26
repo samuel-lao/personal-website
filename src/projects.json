@@ -4,7 +4,7 @@
         "title": "Infer!",
         "github": "https://github.com/Samurl88/inferFrontend",
         "subtitle": "Training inference skills with ease.",
-        "blurb": "Infer! is an app unlike any other. Infer! is an app unlike any otherInfer! is an app unlike any otherInfer! is an app unlike any otherInfer! is an app unlike any otherInfer! is an app unlike any otherInfer! is an app unlike any otherInfer! is an app unlike any other",
+        "blurb": "Infer! offers an engaging way to train one's inference skills - by watching movies! After pivotal scenes, the app prompts the user with a series of customized questions tailored to testing one's inference abilities. I created this app for a teenager I know who has autism - she found her previous inference training boring (simply consisting of repeated flashcards), so I worked with her to make her favorite pasttime - watching movies - into something she could also learn from!",
         "info": [
             {
                 "title": "DEMO",
@@ -150,7 +150,7 @@
     "designation": "asdrp",
     "title": "Memory Research",
     "subtitle": "How do we make memory training engaging?",
-    "blurb": "Memory is an subject unlike any other. Memory is an subject unlike any other. Memory is an subject unlike any other. Memory is an subject unlike any other. Memory is an subject unlike any other.",
+    "blurb": "Gamified the dual n-back task, a cognitive exercise that improves working memory, to target the dopaminergic system and enhance user engagement. Conducted numerous studies to gauge effectiveness of novel n-back game. Work performed in the Jahanikia NeuroLab.",
     "info": [
         {
             "title": "TOPICS",
@@ -178,7 +178,7 @@
     "designation": "asdrp",
     "title": "LLM Creativity Research",
     "subtitle": "How creative is AI?",
-    "blurb": "Creativity is an subject unlike any other. Creativity is an subject unlike any other. Creativity is an subject unlike any other. Creativity is an subject unlike any other. Creativity is an subject unlike any other.",
+    "blurb": "Evaluated human creativity in comparison to AI creativity by adapting existing creativity assessments and inventories (AUT, RAT, TTCT Figural, and NEO-FFI). Proposed perspective with which to view AI in regards to creative endeaors and designing platform to bolster human creativity. Led team in the Jahanikia NeuroLab.",
     "info": [
         {
             "title": "TOPICS",
@@ -206,7 +206,7 @@
     "designation": null,
     "title": "Service Outreach Club",
     "subtitle": "Giving back. A lot.",
-    "blurb": "Serving is an subject unlike any other. Serving is an subject unlike any other. Serving is an subject unlike any other. Serving is an subject unlike any other. Serving is an subject unlike any other.",
+    "blurb": "Co-led my school's Service Outreach Club. Prepared and led weekly club meetings to engage members in numerous volunteer activities, both on and off campus. Club became so widespread that quite literally half the school joined.",
     "info": [
         {
             "title": "TOPICS",
@@ -258,10 +258,10 @@
 },
 "bingo": {
     "designation": "cs50",
-    "title": "BINGO Guide",
+    "title": "SkyBlock Bingo Guide",
     "github": "https://github.com/Samurl88/cs50fp",
     "subtitle": "A guide to gameception.",
-    "blurb": "Here's my CS50 Final Project, months in the making! I've created a essentially a helper for a game in a game in a game in a game -- that is, a solver for the Minecraft server Hypixel's game mode Skyblock's monthly event of Bingo, in which a player must complete certain tasks ranging in difficulty within a week. At a broad level, this website reads data from Hypixel's Public API, finds certain keywords & phrases, and gives some solution or relevant information for each Bingo task.",
+    "blurb": "Completed as my CS50x final project. An automated guide for a Hypixel SkyBlock's Bingo, a super niche game in a game in a game in a game. The website fetches data from Hypixel's public API, seeks out significant keywords or phrases, and generates a solution to a Bingo task or webscrapes relevant information.",
     "info": [
         {
             "title": "TOPICS",
