@@ -31,10 +31,20 @@
 }
 
 .home-super-container {
-    height: 100vh;
-    justify-content: safe center;
+    min-height: 90vh; 
     display: flex;
-    margin-top: -75px 
+    justify-content: center; 
+    align-items: center; 
+    /* margin-top: -75px;  */
+}
+
+.home-container {
+    width: clamp(1rem, 80vw, 80rem);
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 20px 0;
+    /* background-color: red; */
 }
 
 .myface {
@@ -84,14 +94,6 @@
 
 .lightButton:hover {
     background-color: rgb(200, 200, 178);
-}
-
-.home-container {
-    width: clamp(1rem, 80vw, 80rem);
-    display: flex;
-    gap: 20px;
-    /* justify-content: center; */
-    align-items: center;
 }
 
 .title {
@@ -198,22 +200,20 @@
     }
 
     .home-container-small {
-        padding-top: 50px;
         width: clamp(1rem, 80vw, 80rem);
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 30px;
         text-align: center;
-        margin-top: 3rem;
-
     }
 
     .home-super-container {
-        height:80vh;  
+        min-height: 79vh;  
         justify-content: center;
-        align-items:unset;
+        align-items: center;
         display: flex;
+        
     }
 
     .social-container {
@@ -237,7 +237,7 @@
 }
 
 /* Change navbar to compressed */
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 600px) {
     #navbar {
         display: none;
     }
@@ -249,12 +249,11 @@
         gap: 50px;
         justify-content: center;
         align-items: center;
-        padding-top: 10px;
+        padding: 15px 0;
         width: 100vw;
         position: fixed;
         top: 0;
         z-index: 100;
-        padding-bottom: 10px;
     }
 
     .nav-menu-btn {

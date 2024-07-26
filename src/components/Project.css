@@ -157,7 +157,7 @@ iframe {
 
 
 
-@media only screen and (max-width: 510px) {
+@media only screen and (max-width: 600px) {
     .github-btn {
         display: none;
 

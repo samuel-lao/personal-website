@@ -151,7 +151,7 @@
 
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 600px) {
     .entire-container {
         display: flex;
         align-items: center;

@@ -41,12 +41,6 @@ function App() {
         <AnimatedRoutes darkMode={darkMode} setDarkMode={setDarkMode} />
       </BrowserRouter>
   );
-
-  return (
-    <div style={{backgroundColor: "red"}}>
-      tRWfr
-    </div>
-  )
 }
 
 export default App;
