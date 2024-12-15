@@ -70,9 +70,6 @@ export default function Home() {
                     <Link to="https://www.linkedin.com/in/samlao/">
                         <FaLinkedinIn size={30} className='social-icon' color="var(--text-color)" />
                     </Link>
-                    <Link to="https://www.instagram.com/samuel.b.lao/">
-                        <FaInstagram size={30} className='social-icon' color="var(--text-color)" />
-                    </Link>
                 </div>
                 {/* </div> */}
             </div>
