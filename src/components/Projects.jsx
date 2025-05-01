@@ -1,15 +1,16 @@
 import React from 'react';
 import './App.css';
 
-import { animated, useSpring, useTransition } from '@react-spring/web';
+import { animated } from '@react-spring/web';
 
 import infer from '../assets/projects/infer.png';
-import lexify from '../assets/projects/lexify.png';
 import nutrivision from '../assets/projects/nutrivision.png';
 import llmcreativity from '../assets/projects/llmcreativity.jpeg';
 import memory from '../assets/projects/memory.jpeg';
 import bingo from '../assets/projects/bingo.png';
 import serviceoutreach from '../assets/projects/serviceoutreach.jpg';
+import pdp from '../assets/projects/pdp.png';
+
 import { Link } from 'react-router-dom';
 
 export default function Projects() {
@@ -19,6 +20,21 @@ export default function Projects() {
                 <text className="category-title">Long Term Projects</text>
                 <div className="row-container">
                     <div className="category-container">
+
+                        <div className="project-container">
+                            <Link to="pdp">
+                                <img src={pdp} height={"auto"} loading="lazy" className='project-image' />
+                            </Link>
+                            <text className="project-title">Penn Degree Plan</text>
+                            <text className="project-subtitle">App to immerse immigrants for expedited language acquisition</text>
+                            <div className="tag-container">
+                                <text className="project-tag">FULLSTACK</text>
+                                <text className="project-tag">REACT</text>
+                                <text className="project-tag">DJANGO</text>
+                                <text className="project-tag">POSTGRESQL</text>
+                            </div>
+                        </div>
+
                         <div className="project-container">
                             <Link to="infer">
                                 <img src={infer} height={"auto"} loading="lazy" className='project-image' />
@@ -28,19 +44,6 @@ export default function Projects() {
                             <div className="tag-container">
                                 <text className="project-tag">ML</text>
                                 <text className="project-tag">FULLSTACK</text>
-                                <text className="project-tag">REACT NATIVE</text>
-                            </div>
-                        </div>
-
-                        <div className="project-container">
-                            <Link to="lexify">
-                                <img src={lexify} height={"auto"} loading="lazy" className='project-image' />
-                            </Link>
-                            <text className="project-title">Lexify</text>
-                            <text className="project-subtitle">App to immerse immigrants for expedited language acquisition</text>
-                            <div className="tag-container">
-                                <text className="project-tag">OCR</text>
-                                <text className="project-tag">FIREBASE</text>
                                 <text className="project-tag">REACT NATIVE</text>
                             </div>
                         </div>

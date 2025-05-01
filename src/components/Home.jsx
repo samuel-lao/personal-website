@@ -1,22 +1,12 @@
 import React, { useEffect } from 'react'
 import './App.css';
 
-import envelope from '../assets/envelope.png';
-import github from '../assets/github.png';
-import linkedin from '../assets/linkedin.png';
-import instagram from '../assets/instagram.png';
-import myface from '../assets/myface.png';
+import myface from '../assets/myface.jpeg';
 import { Link } from 'react-router-dom';
-
-import { FaLink, FaRegEnvelope } from "react-icons/fa6";
+import { FaRegEnvelope } from "react-icons/fa6";
 import { FiGithub } from "react-icons/fi";
 import { FaLinkedinIn } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-import { RiArrowRightSLine } from "react-icons/ri";
 import { RxDoubleArrowRight } from "react-icons/rx";
-
-
-
 
 export default function Home() {
     useEffect(() => {
@@ -34,17 +24,14 @@ export default function Home() {
                         <RxDoubleArrowRight size={25} />
                     </Link>
                     <div id="social" className='social-container'>
-                        <Link to="mailto:samuel.lao100@gmail.com">
-                            <FaRegEnvelope size={"clamp(20px, 4vw, 40px)"} className='social-icon' color="var(--text-color)" />
-                        </Link>
-                        <Link to="https://github.com/Samurl88">
+                        <Link to="https://github.com/samuel-lao">
                             <FiGithub size={"clamp(20px, 4vw, 40px)"} className='social-icon' color="var(--text-color)" />
                         </Link>
                         <Link to="https://www.linkedin.com/in/samlao/">
                             <FaLinkedinIn size={"clamp(20px, 4vw, 40px)"} className='social-icon' color="var(--text-color)" />
                         </Link>
-                        <Link to="https://www.instagram.com/samuel.b.lao/">
-                            <FaInstagram size={"clamp(20px, 4vw, 40px)"} className='social-icon' color="var(--text-color)" />
+                        <Link to="mailto:samuel.lao100@gmail.com">
+                            <FaRegEnvelope size={"clamp(20px, 4vw, 40px)"} className='social-icon' color="var(--text-color)" />
                         </Link>
                     </div>
                 </div>
@@ -54,24 +41,22 @@ export default function Home() {
             <div className="home-container-small">
                 <div className='title'>Samuel Lao</div>
                 <img src={myface} className='myface' alt="my face" />
-                <div className='subtitle'>Incoming freshman at the <span style={{ color: "var(--penn-red)" }}>University of Pennsylvania</span>. Enjoying life.</div>
-                {/* <div style={{justifyContent: "center", alignItems: "center", display: "flex", flexDirection: "column"}}> */}
+                <div className='subtitle'>Freshman at the <span style={{ color: "var(--penn-red)" }}>University of Pennsylvania</span>. Enjoying life.</div>
                 <Link to="/projects" className="view-projects-btn">
                     <div>View Projects</div>
                     <RxDoubleArrowRight size={25} />
                     </Link>
                 <div id="social" className='social-container'>
-                    <Link to="mailto:samuel.lao100@gmail.com">
-                        <FaRegEnvelope size={30} className='social-icon' color="var(--text-color)" />
-                    </Link>
                     <Link to="https://github.com/samuel-lao">
                         <FiGithub size={30} className='social-icon' color="var(--text-color)" />
                     </Link>
                     <Link to="https://www.linkedin.com/in/samlao/">
                         <FaLinkedinIn size={30} className='social-icon' color="var(--text-color)" />
                     </Link>
+                    <Link to="mailto:samuel.lao100@gmail.com">
+                        <FaRegEnvelope size={30} className='social-icon' color="var(--text-color)" />
+                    </Link>
                 </div>
-                {/* </div> */}
             </div>
         </div>
     )

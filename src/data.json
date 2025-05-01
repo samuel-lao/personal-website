@@ -11,6 +11,10 @@
         "cs50": {
             "description": "Completed as a final project for Harvard's online CS50x course.",
             "img": "/i-project/cs50.png"
+        },
+        "labs": {
+            "description": "Created as a part of the University of Pennsylvania club Penn Labs.",
+            "img": "/i-project/labs2.png"
         }
     }
 }

@@ -1,4 +1,46 @@
 {
+    "pdp": {
+        "designation": "labs",
+        "title": "Penn Degree Plan",
+        "tab": "Degree Plan",
+        "github": "https://github.com/pennlabs/penn-courses",
+        "subtitle": "Cultural immersion turned interactive study guide.",
+        "blurb": "Penn Degree Plan is a student-run service that provides 4-year degree planning for undergraduate courses and professors at the University of Pennsylvania. Personally, I've worked on a transcript parser to auto-load courses, and I've also researched and implemented double counting across multiple majors/degrees (while considering the many, many edge cases that are involved).",
+        "info": [
+            {
+                "title": "DEMO",
+                "link": true,
+                "content": [
+                    {
+                        "title": "Try it out! (You need to be a Penn student)",
+                        "link": "https://penndegreeplan.com/"
+                    }
+                ]
+            },
+            {
+                "title": "FRONTEND",
+                "content": "React"
+            },
+            {
+                "title": "BACKEND",
+                "content": "Django, PostgreSQL"
+            },
+            {
+                "title": "SOCIALS",
+                "link": true,
+                "content": [
+                    {
+                        "title": "Penn Labs",
+                        "link": "https://pennlabs.org/"
+                    }
+                ]
+            }
+        ],
+        "photos": [
+            "/i-project/i-pdp-3.png",
+            "/i-project/i-pdp-2.png"
+        ]
+    },
     "infer": {
         "designation": "sanakama",
         "title": "Infer!",
@@ -47,60 +89,6 @@
         ],
         "photos": [
             "/i-project/i-infer.png"
-        ]
-    },
-    "lexify": {
-        "designation": "sanakama",
-        "title": "Lexify",
-        "tab": "Lexify",
-        "github": "https://github.com/Samurl88/lAInguage",
-        "subtitle": "Cultural immersion turned interactive study guide.",
-        "blurb": "Lexify brings ease to assimilating into a foreign culture by providing an interactive study platform for language learning. Quickly highlight and define words on the go and gain mastery over all your terms with auto-generated flashcards, multiple choice, and free response questions.",
-        "info": [
-            {
-                "title": "DEMO",
-                "link": true,
-                "content": [
-                    {
-                        "title": "Try it out on iOS!",
-                        "link": "https://testflight.apple.com/join/5zBBEdt5"
-                    }
-                ]
-            },
-            {
-                "title": "FRONTEND",
-                "content": "React Native"
-            },
-            {
-                "title": "BACKEND",
-                "content": "Firebase, Gemini Pro 1.5"
-            },
-            {
-                "title": "SOCIALS",
-                "link": true,
-                "content": [
-                    {
-                        "title": "Devpost",
-                        "link": "https://devpost.com/software/lexify"
-                    },
-                    {
-                        "title": "YouTube",
-                        "link": "https://www.youtube.com/embed/jX8G3xIiAdQ?si=rIQ7RMgceix0iVrq"
-                    }
-                ]
-            }
-        ],
-        "awards": [
-            {
-                "title": "WINNER",
-                "description": "Winner of AI for Change Hackathon"
-            }
-        ],
-        "videos": [
-            "https://www.youtube.com/embed/jX8G3xIiAdQ?si=rIQ7RMgceix0iVrq"
-        ],
-        "photos": [
-            "/i-project/i-lexify-l.jpeg"
         ]
     },
     "nutrivision": {
