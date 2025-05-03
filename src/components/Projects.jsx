@@ -26,7 +26,7 @@ export default function Projects() {
                                 <img src={pdp} height={"auto"} loading="lazy" className='project-image' />
                             </Link>
                             <text className="project-title">Penn Degree Plan</text>
-                            <text className="project-subtitle">App to immerse immigrants for expedited language acquisition</text>
+                            <text className="project-subtitle">Four year degree planner for University of Pennsylvania students</text>
                             <div className="tag-container">
                                 <text className="project-tag">FULLSTACK</text>
                                 <text className="project-tag">REACT</text>
