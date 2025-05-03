@@ -4,7 +4,7 @@
         "title": "Penn Degree Plan",
         "tab": "Degree Plan",
         "github": "https://github.com/pennlabs/penn-courses",
-        "subtitle": "Cultural immersion turned interactive study guide.",
+        "subtitle": "Goodbye spreadsheets, hello PDP.",
         "blurb": "Penn Degree Plan is a student-run service that provides 4-year degree planning for undergraduate courses and professors at the University of Pennsylvania. Personally, I've worked on a transcript parser to auto-load courses, and I've also researched and implemented double counting across multiple majors/degrees (while considering the many, many edge cases that are involved).",
         "info": [
             {
