@@ -18,7 +18,7 @@ export default function Home() {
             <div className="home-container">
                 <div className="home-info-container">
                     <div className='title'>Samuel Lao</div>
-                    <div className='subtitle'>Freshman at the <span style={{ color: "var(--penn-red)" }}>University of Pennsylvania</span>. Enjoying life.</div>
+                    <div className='subtitle'>Rising sophomore at the <span style={{ color: "var(--penn-red)" }}>University of Pennsylvania</span>. Enjoying life.</div>
                     <Link to="/projects" className="view-projects-btn" style={{alignSelf: "flex-start", marginTop: "clamp(0px, 0.7vw, 20px)", marginBottom: "clamp(0px, 0.7vw, 10px)"}}>
                         <div>View Projects</div>
                         <RxDoubleArrowRight size={25} />
@@ -41,7 +41,7 @@ export default function Home() {
             <div className="home-container-small">
                 <div className='title'>Samuel Lao</div>
                 <img src={myface} className='myface' alt="my face" />
-                <div className='subtitle'>Freshman at the <span style={{ color: "var(--penn-red)" }}>University of Pennsylvania</span>. Enjoying life.</div>
+                <div className='subtitle'>Rising sophomore at the <span style={{ color: "var(--penn-red)" }}>University of Pennsylvania</span>. Enjoying life.</div>
                 <Link to="/projects" className="view-projects-btn">
                     <div>View Projects</div>
                     <RxDoubleArrowRight size={25} />
