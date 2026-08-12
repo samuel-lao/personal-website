@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import "./Navbar.css"
 
 import { LuSun, LuMoon, LuMenu } from "react-icons/lu";
 import { FaRegSmile } from "react-icons/fa";
-import { useSpring, animated, easings } from "@react-spring/web";
+import { useSpring, animated } from "@react-spring/web";
 
 
 

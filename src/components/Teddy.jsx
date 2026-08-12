@@ -5,7 +5,7 @@ import "./Teddy.css";
 import { Link } from 'react-router-dom';
 import teddy from "../assets/teddy.jpeg";
 
-import { GridLoader, PropagateLoader } from 'react-spinners';
+import { GridLoader } from 'react-spinners';
 
 // What a secret!
 const SECRET_PASSKEY = "Teddy is objectively the best dog.";
@@ -26,7 +26,7 @@ const Display = memo(({ item, answer, setAnswer, wrong, setWrong, handleSubmit, 
     });
 
     useEffect(() => {
-        if (item == 1) {
+        if (item === 1) {
             var i = 0;
             var intr = setInterval(function () {
                 i += 1
@@ -37,7 +37,7 @@ const Display = memo(({ item, answer, setAnswer, wrong, setWrong, handleSubmit, 
                 }
             }, 2000)
         }
-    }, [item])
+    }, [item, setIndex])
 
 
     useEffect(() => {
@@ -93,7 +93,6 @@ const Display = memo(({ item, answer, setAnswer, wrong, setWrong, handleSubmit, 
 });
 
 export default function Teddy() {
-    const [permission, setPermission] = useState(false);
     const [wrong, setWrong] = useState(null);
     const [index, setIndex] = useState(0);
     const [answer, setAnswer] = useState("");
@@ -103,7 +102,6 @@ export default function Teddy() {
         const data = new FormData(e.target);
         const formJson = Object.fromEntries(data.entries());
         if (formJson.answer === SECRET_PASSKEY) {
-            setPermission(true);
             setIndex(1);
         } else {
             setWrong(true);

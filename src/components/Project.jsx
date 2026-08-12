@@ -3,7 +3,6 @@ import { Link, useParams } from 'react-router-dom';
 import { animated } from '@react-spring/web';
 import { LuExternalLink } from "react-icons/lu";
 
-import githubwhite from "../assets/githubwhite.svg"
 import githuboutline from "../assets/github-circle-outline.svg"
 
 import projects from "../projects.json"
@@ -12,7 +11,7 @@ import data from "../data.json"
 import "./Project.css"
 
 export default function Project() {
-    const [id, setId] = useState(useParams().id);
+    const { id } = useParams();
 
     const [title, setTitle] = useState(null)
     const [subtitle, setSubtitle] = useState(null)
@@ -41,7 +40,7 @@ export default function Project() {
             setVideos(projects[id].videos)
             setPhotos(projects[id].photos)
         }
-    }, [])
+    }, [id])
 
 
     if (title)
@@ -52,14 +51,14 @@ export default function Project() {
                         {
                             designation &&
                             <>
-                                <img src={data.designations[designation].img} className='designation' />
+                                <img src={data.designations[designation].img} className='designation' alt={designation} />
                                 <div className='tooltip'>{data.designations[designation].description}</div>
                             </>
                         }
                         {
                             github &&
                             <Link to={github} style={{ textDecoration: "none" }}>
-                                <img src={githuboutline} style={{ width: "2.5em" }} className="github-btn"></img>
+                                <img src={githuboutline} style={{ width: "2.5em" }} className="github-btn" alt="GitHub" />
                             </Link>
                         }
                     </div>
@@ -91,7 +90,7 @@ export default function Project() {
                                             else
                                                 return (
                                                     <div className="info-content-link-disabled">
-                                                        <text>{item.title}{element.content.length > 1 && element.content.slice(-1)[0] != item ? "," : ""}</text>
+                                                        <text>{item.title}{element.content.length > 1 && element.content.slice(-1)[0] !== item ? "," : ""}</text>
                                                         <LuExternalLink color='#2b9278' opacity={0.5} />
                                                     </div>
                                                 )
@@ -140,7 +139,7 @@ export default function Project() {
 
                     {photos && photos.map((photo) => {
                         return (
-                            <img src={photo} width="100%" height="auto" style={{ aspectRatio: "16 / 9", objectFit: "cover", objectPosition: "center", borderRadius: "10px", marginTop: 10 }} />
+                            <img src={photo} width="100%" height="auto" alt="" style={{ aspectRatio: "16 / 9", objectFit: "cover", objectPosition: "center", borderRadius: "10px", marginTop: 10 }} />
                         )
                     })}
 
@@ -154,7 +153,7 @@ export default function Project() {
                         github &&
                         <Link to={github} style={{ textDecoration: "none", width: "clamp(1rem, 90vw, 45rem)" }}>
                             <div className="github-container-mobile">
-                                <img src={githuboutline} style={{ width: "2.5em" }} className="github-icon-mobile" />
+                                <img src={githuboutline} style={{ width: "2.5em" }} className="github-icon-mobile" alt="GitHub" />
                                 <div>See repository</div>
                                 <LuExternalLink color='white' />
                             </div>
@@ -164,7 +163,7 @@ export default function Project() {
                         designation &&
                         <div style={{ width: "clamp(1rem, 90vw, 45rem)" }}>
                             <div className="designation-container-mobile">
-                                <img src={data.designations[designation].img} className='designation-mobile' />
+                                <img src={data.designations[designation].img} className='designation-mobile' alt={designation} />
                                 <div>{data.designations[designation].description}</div>
                             </div>
                         </div>

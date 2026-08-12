@@ -23,7 +23,7 @@ export default function Projects() {
 
                         <div className="project-container">
                             <Link to="pdp">
-                                <img src={pdp} height={"auto"} loading="lazy" className='project-image' />
+                                <img src={pdp} height={"auto"} loading="lazy" className='project-image' alt="Penn Degree Plan" />
                             </Link>
                             <text className="project-title">Penn Degree Plan</text>
                             <text className="project-subtitle">Four year degree planner for University of Pennsylvania students</text>
@@ -37,7 +37,7 @@ export default function Projects() {
 
                         <div className="project-container">
                             <Link to="infer">
-                                <img src={infer} height={"auto"} loading="lazy" className='project-image' />
+                                <img src={infer} height={"auto"} loading="lazy" className='project-image' alt="Infer!" />
                             </Link>
                             <text className="project-title">Infer!</text>
                             <text className="project-subtitle">App to train inference skills of autistic audience using movies</text>
@@ -50,7 +50,7 @@ export default function Projects() {
 
                         <div className="project-container">
                             <Link to="nutrivision">
-                                <img src={nutrivision} height={"auto"} loading="lazy" className='project-image' />
+                                <img src={nutrivision} height={"auto"} loading="lazy" className='project-image' alt="Nutrivision" />
                             </Link>
                             <text className="project-title">Nutrivision</text>
                             <text className="project-subtitle">App to promote mindful eating while alleviating dieting pressure</text>
@@ -70,7 +70,7 @@ export default function Projects() {
                     <div className="category-container">
                         <div className="project-container">
                             <Link to="memory">
-                                <img src={memory} height={"auto"} loading="lazy" className='project-image' />
+                                <img src={memory} height={"auto"} loading="lazy" className='project-image' alt="Memory Research" />
                             </Link>
                             <text className="project-title">Memory Research</text>
                             <text className="project-subtitle">Collaborating to improve memory by revamping the existing n-back task</text>
@@ -83,7 +83,7 @@ export default function Projects() {
 
                         <div className="project-container">
                             <Link to="llmcreativity">
-                                <img src={llmcreativity} height={"auto"} loading="lazy" className='project-image' />
+                                <img src={llmcreativity} height={"auto"} loading="lazy" className='project-image' alt="LLM Creativity Research" />
                             </Link>                           
                             <text className="project-title">LLM Creativity Research</text>
                             <text className="project-subtitle">Collaborating to test the creativity of LLMs using established assessments</text>
@@ -103,7 +103,7 @@ export default function Projects() {
                     <div className="category-container">
                         <div className="project-container">
                             <Link to="serviceoutreach">
-                                <img src={serviceoutreach} height={"auto"} loading="lazy" className='project-image' />
+                                <img src={serviceoutreach} height={"auto"} loading="lazy" className='project-image' alt="Service Outreach" />
                             </Link>
                             <text className="project-title">Service Outreach</text>
                             <text className="project-subtitle">Led club that gave back to local community. 50% of school joined!</text>
@@ -115,7 +115,7 @@ export default function Projects() {
 
                         <div className="project-container">
                             <Link to="bingo">
-                                <img src={bingo} height={"auto"} loading="lazy" className='project-image' />
+                                <img src={bingo} height={"auto"} loading="lazy" className='project-image' alt="SkyBlock Bingo" />
                             </Link>
                             <text className="project-title">SkyBlock Bingo</text>
                             <text className="project-subtitle">An automated guide for a game in a game in a game in a game</text>

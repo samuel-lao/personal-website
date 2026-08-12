@@ -1,14 +1,13 @@
-import { BrowserRouter, Route, Router, Routes, useLocation } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useTransition, animated, easings } from "@react-spring/web";
 
 import Home from "./components/Home";
-import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Project from "./components/Project";
 import Teddy from "./components/Teddy";
 
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 import projects from "./projects.json"
 
